@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<!-- awesome css link here -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css"
+  integrity="sha512-72McA95q/YhjwmWFMGe8RI3aZIMCTJWPBbV8iQY3jy1z9+bi6+jHnERuNrDPo/WGYEzzNs4WdHNyyEr/yXJ9pA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="/assets/css/header.css">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/footer.css">
+<link rel="stylesheet" href="/assets/css/asideLinks.css">
+<link rel="stylesheet" href="/assets/automation_trends/automation_trends.css">
+
+<body>
+  <!-- header start here========================= -->
+  <div class="headerTop">
+    <div class="wrapper">
+      <ul class="imprintLogos">
+        <li>
+          <a href="/index.html" class="logo">
+            <img src="/assets/images/imprintAutomationIndiaLogo.jpeg" alt="Automation Logo" />
+          </a>
+        </li>
+        <li>
+          <a href="/imprintArchive.html" class="logo">
+            <img src="/assets/images/since 1961.png" alt="Magazine Logo" />
+          </a>
+        </li>
+      </ul>
+
+      <ul class="videoProdcastLogo">
+        <li>
+          <a href="#" class="indiaAutomationMagazine">
+            India's Automation Magazine
+          </a>
+        </li>
+        <li class="vidProLogo">
+          <a href="#" id="video" title="watch video">video</a>
+          <a href="#" id="podcast" title="listen podcast">podcast</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <header class="header">
+    <div class="headerBottom">
+      <div class="wrapper">
+        <nav class="navbar">
+          <ul class="navbarList">
+            <li>
+              <a href="/index.html" title="Home">Home</a>
+            </li>
+            <li class="dropdown" onclick="show_hide()">
+              <a href="#" title="Automation WorldWide" id="automationWorldWide" class="dropdown-btn">Automation
+                WorldWide<i class="fa fa-caret-down"></i>
+              </a>
+              <div class="dropdown-content">
+                <a href="#" title="Global Expo">Global Expo</a>
+                <a href="#" title="Association">Association</a>
+                <a href="#" title="Conference">Conference</a>
+                <!-- <a href="#" title="Magazine">Magazine</a> -->
+              </div>
+            </li>
+            <!-- <li>
+              <a href="#internationalAssociation" title="International Association">International Association</a>
+            </li> -->
+            <li>
+              <!-- <a href="#projects" title="Projects">Projects</a> -->
+              <a href="/magazine.html" title="Magazine">Imprint Automation India Magzine</a>
+            </li>
+            <li>
+              <a href="/imprintArchive.html" title="Imprint Archive">Imprint Archive</a>
+            </li>
+            <li>
+              <a href="/ourTeam.html" title="Our Team">Our Team</a>
+            </li>
+            <li>
+              <a href="/contact.html" title="Contact Us">Contact Us</a>
+            </li>
+            <li>
+              <a href="/about.html" title="About Us">About Us</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="videoProdcastLogo">
+          <li>
+            <a href="#" id="video" title="watch video">video</a>
+          </li>
+          <li>
+            <a href="#" id="podcast" title="listen podcast">podcast</a>
+          </li>
+        </ul>
+        <div class="mobileNavBtn">
+          <ion-icon name="menu-outline" class="mobileNavIcon"></ion-icon>
+          <ion-icon name="close-outline" class="mobileNavIcon"></ion-icon>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header end here========================= -->
+
+  <div class="asideLinks">
+    <ul>
+      <li><a href="/assets/rate/rate.html" onclick="showFullName(this, 'Print Advertising Specification & Rate')">Print
+          Advertising
+          Specification & Rate</a></li>
+      <li><a href="/assets/automation_trends/automation_trends.html"
+          onclick="showFullName(this, 'Automation Trends')">Automation Trends</a></li>
+      <li><a href="/assets/automation_news/automation_news.html"
+          onclick="showFullName(this, 'Automation News')">Automation News</a></li>
+      <li><a href="/assets/automation_robotics/automation_robotics.html"
+          onclick="showFullName(this, 'Automation Robotics')">Automation Robotics</a></li>
+      <li><a href="/assets/artifical_intelligence/artificial_intelligence.html"
+          onclick="showFullName(this, 'Artificial Intelligence')">Artificial Intelligence</a></li>
+      <!-- <li><a href="#" onclick="showFullName(this, 'Automation IMTEX')">Automation IMTEX</a></li> -->
+      <li><a href="/assets/automation_articles/automation_articles.html"
+          onclick="showFullName(this, 'Automation Articles')">Automation Articles</a></li>
+      <li><a href="/assets/mediakit/mediakit.html" onclick="showFullName(this, 'Mediakit')">Mediakit</a></li>
+      <li><a href="/assets/editorial_calender/editorial_calender.html"
+          onclick="showFullName(this, 'Editorial Calendar')">Editorial Calendar</a></li>
+      <li><a href="#" onclick="showFullName(this, 'Digital Campaign')">Digital Campaign</a></li>
+      <li><a href="#" onclick="showFullName(this, 'Advertisement')">Advertisement</a></li>
+    </ul>
+  </div>
+  <div class="arrow-btn">
+    <ion-icon name="arrow-forward-outline" class="arrow-icon"></ion-icon>
+    <ion-icon name="arrow-back-outline" class="arrow-icon"></ion-icon>
+  </div>
+  <main>
+    <section>
+      <div class="wrapper">
+        <div class="allTrends">
+          <h2 class="heading">Automation Trends</h2>
+          <h4 class="subheading">Trends In Industrial Automation Technology</h4>
+          <p class="link"><b>By NAI Group</b> <a href="https://www.nai-group.com"
+              target="_blank">(www.nai-group.com)</a></p>
+          <div class="subheadingtext">
+            <p class="circle">Edge
+              computing, <br>
+              Cloud servers, AR, VR,
+              IIOT, 5G, Digital transformation,
+              Remote supervision, Risk
+              management, Data theft, production
+              sabotage, Industrial espionage.
+              All these trending techs make automation
+              an exiting objective. Expensive
+              diffi- cult and dodgy. The key
+              is to invest in dedicated manpower.
+              The people mantra
+              is the Imprint
+              mantra.</p>
+            <p class="inner-text">
+
+              Todays innovations in <b>industrial
+                automation</b> are largely
+              focused on interconnectivity.
+              Powerful new technologies provide
+              industry professioal with unprecedented
+              abilities to see what is
+              happening and respond in real-time.
+              New tech is being dveloped for
+              training, to bridge the skills gap and
+              provide you with the knowledgeable
+              workforce you need. And AI is
+              improving everything from preventive
+              maintenance to cybersecurity.
+              These advanced technologies rely
+              upon well-designed infrastructure
+              and progressive leadership. “To be
+              successful in todays climate, modern
+              manufacturers must embrace
+              the ongoing shifts in technology and
+              adapt in real-time to fight back the
+              growing number of more agile and
+              digitally empowered competitors.
+              Ruban Phukan on Manufacturing
+              Automation Now we’ll take a look at
+              the most influential trends in industrial
+              automation and describe how
+              they impact industry today</p>
+          </div>
+
+          <hr>
+          <h4 class="subheading">5G Boosts Interconnectivity</h4>
+          <div class="subheadingtext">
+            <!-- First Column: Text -->
+            <div class="inner-text">
+              <p>5G is taking the world by storm
+                with lightning fast download speeds
+                (around 1G/second) and a broadening
+                reach thanks to the expanding
+                infrastructure of satellites, cell
+                towers and micro cells. Technology
+                that was at one point location
+                dependent is soon to be available
+                to more remote areas. This is
+                especially important to rural areas,
+                where healthcare hampered by poor
+                connectivity. Companies like NAI
+                arehelping to cre- ate the equipment
+                needed to <b>maximize the possibilities
+                  that 5G brings to rural communities.</b>
+                5G also impacts indus- try decisions
+                and problem solving, as it enables faster downloads and more reliable
+                connectivity.</p>
+            </div>
+
+            <!-- Second Column: Hexagon with Text -->
+            <div class="hexagonColumn">
+              <div class="hexagon">
+                <p class="hexagonText">maximize
+                  the posibilities
+                  that 5G brings
+                  to rural
+                  communities</p>
+              </div>
+            </div>
+
+            <!-- Third Column: Image -->
+            <div class="imageColumn">
+              <img src="/assets/images/magzine_images/trends.png" alt="5G Image" />
+            </div>
+          </div>
+
+          <hr>
+
+
+          <h4 class="subheading">Industrial Internet Of Things, An Essential Industrial Automation
+            Technology</h4>
+          <div class="subheadingtext">
+
+            <div class="inner-text">
+              <p>The Industrial Internet of Things
+                (IIoT) refers to the interconnectivity
+                of devices, and it is becoming
+                increasingly relevant in all industries.
+                Advancements in sensors
+                and interconnects enable objects
+                to send communications to users
+                without them having to be onsite.
+                And devices can operate on internet
+                and GPS connectivity to inform their
+                behavior. The IIoT has become essential
+                for the agricultural industry,
+                for example, as they rely on GPS to
+                guide their tractors and imbedded
+                sensors to remotely inform farmers
+                of everything from fuel to harvest
+                quantities.Other exapmle of agricultural
+                examples of agricultural
+                applications include sensors
+                in wind turbines and drones for
+                gathering data</p>
+            </div>
+            <div class="image">
+              <img src="/assets/images/magzine_images/Industrial-Internet-of-Things.jpg" alt="5G Image" />
+            </div>
+          </div>
+
+          <hr>
+
+          <h4 class="subheading">Artificial Intelligence</h4>
+          <div class="subheadingtext">
+            <div class="inner-text">
+              <p>Artificial intelligence (AI) is transforming
+                every area of technology.
+                Industry professionals are using AI
+                to predict problems with their equipment,
+                allowing them to more effectively
+                stay on the preventive side
+                of maintenance and repair. AI can
+                also be used to test out possible
+                solutions and come to an informed
+                decision at very low costs and without
+                riskingdamage to machinery
+                or personnel. Additionally, AI isbeing used to analyze big data
+                to make deci- sions based on the
+                behavior of millions of potential
+                customers.</p>
+            </div>
+          </div>
+          <hr>
+
+          <h4 class="subheading">Asset Management By OEMs</h4>
+          <div class="subheadingtext">
+            <div class="inner-text">
+              <p>The IIoT enables original equipment
+                manufacturers (OEMs) to
+                service and maintain their equipment
+                remotely. In a world where
+                tech is developing faster than the
+                workforce is able to be trained,
+                having OEMs take care of their own
+                equipment is a dream come true for many industry professionals.
+                In some cases, the equipment is
+                effectively rented from the OEM. In
+                other cases, when the assets are
+                purchased by the company using
+                them, the user pays a subscription
+                to have the OEM provide monitoring,
+                maintenance and repair.While this approach of outsourcing asset
+                management to the OEMs, some
+                voices caution that OEMs may
+                focus too much on risk management
+                for their companys sake and
+                not focus enough on maximizing the
+                asset for the user./p>
+            </div>
+            <div class="image">
+              <img src="/assets/images/magzine_images/WhatsApp Image 2023-09-08 at 4.56.32 PM.jpeg"
+                alt="magzine_image" />
+            </div>
+          </div>
+
+          <hr>
+
+          <h4 class="subheading">Artificial Intelligence</h4>
+          <div class="subheadingtext">
+            <div class="inner-text">
+              <p>Artificial intelligence (AI) is transforming
+                every area of technology.
+                Industry professionals are using AI
+                to predict problems with their equipment,
+                allowing them to more effectively
+                stay on the preventive side
+                of maintenance and repair. AI can
+                also be used to test out possible
+                solutions and come to an informed
+                decision at very low costs and without
+                riskingdamage to machinery
+                or personnel. Additionally, AI isbeing used to analyze big data
+                to make deci- sions based on the
+                behavior of millions of potential
+                customers.</p>
+            </div>
+          </div>
+          <hr>
+
+          <h4 class="subheading">Bridging The Skills Gap With New Training Tech For Industrial
+            Automation Technology</h4>
+          <div class="subheadingtext">
+            <div class="inner-text">
+              <p>All these new capabilities offered by 21st-century tech create new needs for a highly skilled
+                workforce.
+                Bridging the skills gap means training must be faster and more intuitive than ever. Several new
+                technologies
+                are forming around these needs:</p>
+            </div>
+          </div>
+          <hr>
+
+          <div class="info-columns">
+            <div class="column">
+              <h4 class="subheading">Augmented reality</h4>
+              <p class="text">Using a tablet or a pair of (very
+                special) safety glasses, users see
+                an overlay augmenting their natural
+                sight. Details relevant to what
+                they’re currently looking at become
+                visible on the screen, so the user is
+                getting pertinent data very quickly.
+                </p>
+            </div>
+            <div class="column">
+              <h4 class="subheading">Virtual reality</h4>
+              <p class="text">Virtual reality enables effective training with a 3D, immersive experience. This is
+                especially useful for industry professionals when the situations for which personnel are being trained
+                are difficult, costly, or dangerous to access. Think space stations, nuclear power plants, and
+                production facilities where stopping production for training would be costly.</p>
+            </div>
+            <div class="column">
+              <h4 class="subheading">Digital twins</h4>
+              <p class="text">Digital twins are used for a wide variety of training, from guiding expert personnel in
+                repairs to training robots through AI and machine learning. It’s like an extremely advanced manual, but
+                the diagrams are 3D and include information about what’s going on with the equipment in the moment.</p>
+            </div>
+          </div>
+
+          <hr>
+
+          <h4 class="subheading">Providing Reliable Equipment To Power Connectivity</h4>
+          <div class="subheadingtext">
+            <div class="inner-text">
+              <p>include edge and cloud connectivity,
+                which keep managers abreast
+                of the status of their production in
+                real-time. This requires powerful
+                servers and highly-integrated tech.
+                In addition, blockchain technology
+                enables producers to keep a clear
+                and static log of their transactions
+                or uses of an item. Digital transformation
+                in all its forms is set to be
+                the focus for the foreseeable future.
+                Implementing these tech advancements
+                in your company requires
+                not only the intellectual knowledge
+                but also the infrastructure to support
+                your tech. NAI provides custom
+                cable assemblies and cable
+                harnesses to power, communicate
+                and share data from your specialized
+                tech, as well as with sensors,
+                control panels and more. They’ve
+                been able to keep up with the tech
+                advancements developed over the
+                past several decades, and they
+                have the personnel and production facilities to keep up with the advancements
+                you want to implement
+                today.</p>
+            </div>
+            <!-- Second Column: Hexagon with Text -->
+            <div class="hexagonColumn1">
+              <div class="hexagon1">
+                <p class="hexagonText1">Digital
+                  transformation
+                  in all its forms is set
+                  to be the focus for
+                  the foreseeable
+                  future</p>
+              </div>
+            </div>
+            </div>
+          
+          <!--all trend end here -->
+        </div>
+       
+      
+    </section>
+  </main>
+  <!-- main end here-->
+
+
+
+
+
+
+
+
+
+
+  <!-- footer start here========================= -->
+  <footer>
+    <div class="footerUpper">
+      <div class="wrapper">
+        <div class="navigation">
+          <ul>
+            <li>
+              <a href="/about.html" target="_blank" title="About Us">About Us</a>
+            </li>
+            <li>
+              <a href="/contact.html" target="_blank" title="Contact Us">Contact Us</a>
+            </li>
+            <li>
+              <a href="#cookiesPolicy">cookies policy</a>
+            </li>
+            <li class="privacyPolicy">
+              <a href="#" title="privacy policy">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="imprintAutomation">
+          <ul>
+            <li><a href="https://goo.gl/maps/j2Vkj57eJPxxYRFr9"><b>Address: </b>6B/4A,Sangeeta Apts,Juhu
+                Road,Santacruz(W), Mumbai-400049</a></li>
+            <li><a href=""><b>Content & Bussiness Manager: </b>Anchal Tiwari</a></li>
+            <li><a href="mailto:anchal.tiwari@imprint-magazine.in"><b>Email: </b>anchal.tiwari@imprint-magazine.in</a>
+            </li>
+            <li><a href=""><b>Phone: </b>9821135542</a></li>
+            <li><a href=""><b>Landline: </b>02235785032</a></li>
+          </ul>
+        </div>
+        <div class="infocast">
+          <figure>
+            <img src="/assets/images/infocastLogo.png" alt="Infocast System Pvt Ltd">
+          </figure>
+          <p>
+            <a href="https://infocast.in/" target="_blank" title="infocast" id="infocastLogo">Infocast System Pvt
+              Ltd</a>
+          </p>
+          <ul>
+            <li><a href="https://paratechexpo.in/paraExpoExplore.html" title="Expo">Expo</a></li>
+            <li><a href="https://imprint-magazine.in/magazine.html" title="Magazine">Magazine</a></li>
+            <li><a href="" title="Seminar">Seminar</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <div class="footerLower">
+      <div class="wrapper">
+        <div class="copyRight">
+          Copyright &copy; 1961 Imprint
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+  <!-- js ionic file here========================= -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <!-- js link here======================= -->
+  <script src="/assets/js/header.js"></script>
+  <script src="/assets/js/aside.js"></script>
+</body>
+
+
+
+
+</html>
