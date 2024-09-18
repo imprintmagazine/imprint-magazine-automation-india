@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<!-- awesome css link here -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css"
+  integrity="sha512-72McA95q/YhjwmWFMGe8RI3aZIMCTJWPBbV8iQY3jy1z9+bi6+jHnERuNrDPo/WGYEzzNs4WdHNyyEr/yXJ9pA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="/assets/css/header.css">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/footer.css">
+<link rel="stylesheet" href="/assets/css/asideLinks.css">
+<link rel="stylesheet" href="/assets/automation_robotics/automation_robotics.css">
+
+<body>
+  <!-- header start here========================= -->
+  <div class="headerTop">
+    <div class="wrapper">
+      <ul class="imprintLogos">
+        <li>
+          <a href="/index.html" class="logo">
+            <img src="/assets/images/imprintAutomationIndiaLogo.jpeg" alt="Automation Logo" />
+          </a>
+        </li>
+        <li>
+          <a href="/imprintArchive.html" class="logo">
+            <img src="/assets/images/since 1961.png" alt="Magazine Logo" />
+          </a>
+        </li>
+      </ul>
+
+      <ul class="videoProdcastLogo">
+        <li>
+          <a href="#" class="indiaAutomationMagazine">
+            India's Automation Magazine
+          </a>
+        </li>
+        <li class="vidProLogo">
+          <a href="#" id="video" title="watch video">video</a>
+          <a href="#" id="podcast" title="listen podcast">podcast</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <header class="header">
+    <div class="headerBottom">
+      <div class="wrapper">
+        <nav class="navbar">
+          <ul class="navbarList">
+            <li>
+              <a href="/index.html" title="Home">Home</a>
+            </li>
+            <li class="dropdown" onclick="show_hide()">
+              <a href="#" title="Automation WorldWide" id="automationWorldWide" class="dropdown-btn">Automation
+                WorldWide<i class="fa fa-caret-down"></i>
+              </a>
+              <div class="dropdown-content">
+                <a href="#" title="Global Expo">Global Expo</a>
+                <a href="#" title="Association">Association</a>
+                <a href="#" title="Conference">Conference</a>
+                <!-- <a href="#" title="Magazine">Magazine</a> -->
+              </div>
+            </li>
+            <!-- <li>
+              <a href="#internationalAssociation" title="International Association">International Association</a>
+            </li> -->
+            <li>
+              <!-- <a href="#projects" title="Projects">Projects</a> -->
+              <a href="/magazine.html" title="Magazine">Imprint Automation India Magzine</a>
+            </li>
+            <li>
+              <a href="/imprintArchive.html" title="Imprint Archive">Imprint Archive</a>
+            </li>
+            <li>
+              <a href="/ourTeam.html" title="Our Team">Our Team</a>
+            </li>
+            <li>
+              <a href="/contact.html" title="Contact Us">Contact Us</a>
+            </li>
+            <li>
+              <a href="/about.html" title="About Us">About Us</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="videoProdcastLogo">
+          <li>
+            <a href="#" id="video" title="watch video">video</a>
+          </li>
+          <li>
+            <a href="#" id="podcast" title="listen podcast">podcast</a>
+          </li>
+        </ul>
+        <div class="mobileNavBtn">
+          <ion-icon name="menu-outline" class="mobileNavIcon"></ion-icon>
+          <ion-icon name="close-outline" class="mobileNavIcon"></ion-icon>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header end here========================= -->
+
+  <div class="asideLinks">
+    <ul>
+      <li><a href="/assets/rate/rate.html" onclick="showFullName(this, 'Print Advertising Specification & Rate')">Print
+          Advertising
+          Specification & Rate</a></li>
+      <li><a href="/assets/automation_trends/automation_trends.html"
+          onclick="showFullName(this, 'Automation Trends')">Automation Trends</a></li>
+      <li><a href="/assets/automation_news/automation_news.html"
+          onclick="showFullName(this, 'Automation News')">Automation News</a></li>
+      <li><a href="/assets/automation_robotics/automation_robotics.html"
+          onclick="showFullName(this, 'Automation Robotics')">Automation Robotics</a></li>
+      <li><a href="/assets/artifical_intelligence/artificial_intelligence.html"
+          onclick="showFullName(this, 'Artificial Intelligence')">Artificial Intelligence</a></li>
+      <!-- <li><a href="#" onclick="showFullName(this, 'Automation IMTEX')">Automation IMTEX</a></li> -->
+      <li><a href="/assets/automation_articles/automation_articles.html"
+          onclick="showFullName(this, 'Automation Articles')">Automation Articles</a></li>
+      <li><a href="/assets/mediakit/mediakit.html" onclick="showFullName(this, 'Mediakit')">Mediakit</a></li>
+      <li><a href="/assets/editorial_calender/editorial_calender.html"
+          onclick="showFullName(this, 'Editorial Calendar')">Editorial Calendar</a></li>
+      <li><a href="#" onclick="showFullName(this, 'Digital Campaign')">Digital Campaign</a></li>
+      <li><a href="#" onclick="showFullName(this, 'Advertisement')">Advertisement</a></li>
+    </ul>
+  </div>
+  <div class="arrow-btn">
+    <ion-icon name="arrow-forward-outline" class="arrow-icon"></ion-icon>
+    <ion-icon name="arrow-back-outline" class="arrow-icon"></ion-icon>
+  </div>
+  <main>
+    <section>
+      <div class="wrapper">
+        <div class="allRobotics">
+          <h2 class="heading">Automation Robotics</h2>
+          <h4 class="subheading">Outline Of The Global Industrial Robotics Space</h4>
+          <p class="link"><b>By mckinsey & Company</b> <a href="https://www.mckinsey.com/"
+              target="_blank">(www.mckinsey.com)</a></p>
+          <div class="subheadingtext">
+            <p class="box">Traditional robotics will evolve
+              with artificial intelligents. Robotics
+              applications and industrial manufacturing
+              will become intelligent. Evidently Indian manufacturing
+              has defaulted. Large scale manufacturing is
+              going to be adopted in India. Demand; Consumption; Market;
+              Pricing; Retal; are all in place. Robotics will become
+              the primary ingredient for large scale manufacturing.
+              So, dear readers of imprint automation India
+              magazine this business opportunity is
+              crystalized. Stay tuned. Cheers!</p>
+            <p class="inner-text">
+              This chapter
+              organizes and
+              takes stock of
+              the current state of
+              the global industrial
+              robotics market and
+              its key characteristics.
+              The resulting
+              overview serves
+              as a backdrop for
+              understanding
+              the driving factors
+              behind the industry’s
+              expected growth
+              and how it will come
+              about.
+            </p>
+
+          </div>
+          <h4 class="subheading">Overview of products and market segments</h4>
+          <hr>
+
+          <div class="subheadingtext">
+            <div class="inner-text">
+              <p>Unlike the automotive and other
+                machinery industries, McKinsey
+                designates industrial robotics as
+                “low volume, high complexity.” The
+                low-volume designation is related
+                to the relatively small number of
+                machines that are produced and
+                deployed within each specification.
+                Two realities characterize the high
+                complexity of the industrial robotics
+                sector: first, the breadth of different
+                machine types that can be included
+                under the umbrella is massive, just
+                in the sheer number of machine
+                types. Second, there is also great
+                variety when it comes to the size,
+                technology, and application areas of
+                robots. Amid this lack of uniformity
+                or common control systems in the
+                robotics industry, it is important to
+                establish a common understanding
+                of and terminology for the scope
+                covered before analyzing and
+                interpreting both the end users’ and
+                sector’s perspectives and outlook.
+                For this whitepaper, we have leveraged
+                McKinsey’s definitions and
+                categorizations of industrial robots
+                – comprising four subcategories, of
+                which the first is further divided into four segments (see Table 1) – and
+                automation cells and solutions (see
+                Table 2)</p>
+            </div>
+            <div class="image">
+              <img src="/assets/images/magzine_images/robotics.jpg" alt="robotics" />
+            </div>
+          </div>
+          <hr>
+
+          <h4 class="subheading">Industrial robots</h4>
+          <div class="subheadingtext">
+            <div class="inner-text">
+              <p>Industrial robots are categorized along the lines of physical attributes (reach, weight, etc.), how
+                they interact with
+                humans, their mobility, and their level of autonomy.</p>
+              <br>
+              <br>
+
+            </div>
+          </div>
+          <h4 class="subheading">Stand-alone industrial robots</h4>
+          <div class="subheadingtext">
+            <div class="inner-text">
+              <p>The International Federation of Robotics (IFR) estimates that in 2017, there were around 2.1 million
+                stand-alone
+                industrial robots installed worldwide, with a shipment of 381,000 units globally:2</p>
+            </div>
+          </div>
+          <hr>
+
+          <div class="column-info">
+            <div class="column">
+              <div class="row">
+                <span>1.</span> The largest applications include
+                materials handling operations
+                like machine tending (178,000
+                units), welding and soldering
+                (82,000 units), and assembling
+                (47,000 units).
+              </div>
+              <div class="row">
+                <span>2.</span> China is the largest regional
+                market with 138,000 units. The
+                top five countries (China, South
+                Korea, Japan, Germany, and
+                the US) make up more than
+                70% of the market.
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="row">
+                <span>3.</span> Automotive, i.e., OEMs and,
+                increasingly, automotive suppliers,
+                is the largest industry with
+                126,000 units, followed by the
+                electrical and electronics industry
+                with 121,000 units.
+              </div>
+              <div class="row">
+                <span>4.</span> In 2017, articulated arms were
+                the majority of industrial robot
+                shipments at 65%, gantry robots
+                were 16%, SCARA robots
+                were 13%, and delta robots
+                represented 1% of shipments.
+              </div>
+            </div>
+
+            <div class="column">
+              <div class="row">
+                Stand alone industrial robots
+                require the presence of safety
+                equipment – such as fences
+                with gates interlocked to the
+                system for safety – and operate
+                exclusively without direct
+                contact with human workers.
+                They are usually fixed (i.e.,
+                stationary) and programmed for
+                a specific application.
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <h4 class="subheading">Collaborative robots</h4>
+          <div class="subheadingtext">
+            <div class="inner-text">
+              <p>While collaborative robots are still a
+                nascent market with about 10,000
+                to 20,000 units shipped in 2017,
+                analysts expect strong future growth
+                with more than 100,000 units to be
+                shipped in 2020. The key difference
+                between collaborative and standalone
+                robots is that collaborative
+                robots do not need safety fences
+                for safe operations. Onboard safety
+                mechanisms and a process design
+                that enables collocation and collaboration
+                allow these robots to operate
+                directly and safely alongside
+                human workers. These built-in safety
+                mechanisms reduce the need for
+                external safety measures, such as
+                fencing and interlock for entry, thus
+                reducing installation design costs.
+                Collaborative robots can be simpler
+                to apply, connect, and run. Quite often,
+                these are single robot installations
+                with simple and discrete input/
+                output interfaces that lower installation
+                and programming costs. Collaborative
+                robots provide an advantage
+                wherever workers benefit from
+                physical support – for example, by
+                improving process ergonomics and
+                potentially giving older workers or
+                workers with restricted physical
+                ability the assistance they need to
+                be successful in manufacturing. The
+                automotive and electronics sectors
+                are where collaborative robots are
+                currently deployed the most and
+                used not only for incidental work
+                (such as materials handling) but also for value adding (such as assembly).
+                In logistics, however, this
+                robotics category has application in
+                value-added tasks (such as picking)
+                and supportive work (such as kitting
+                and pre-retail services).</p>
+            </div>
+            <div class="image">
+              <img src="/assets/images/magzine_images/collaborative_robots.jpeg" alt="robotics" />
+            </div>
+          </div>
+          <hr>
+
+          <h4 class="subheading">Mobile robots</h4>
+          <div class="subheadingtext">
+            <div class="inner-text">
+              <p>Mobile robots – also known as
+                automated guided vehicles (AGVs)
+                – can be used in a range of applications,
+                including warehouses and
+                distribution centers, manufacturing
+                intralogistics, agriculture, and other
+                environments (especially in logistics
+                in hospitals or retail). There are also
+                first models and prototypes for domestic
+                use. Expectations for AGVs
+                are high. IFR estimates that 69,000
+                logistics systems had been installed
+                in 2017 (63% of total professional
+                service robot).</p>
+            </div>
+            <div class="image">
+              <img src="/assets/images/magzine_images/mobile_robots.jpeg" alt="robotics" />
+            </div>
+          </div>
+          <hr>
+
+          <h2 class="main-heading">Table 1</h2>
+          <h4 class="subheading">Overview of industrial robot segments</h4>
+          <div class="container-column">
+            <div class="col">
+              <h3 class="textheading">Stand alone – articulated</h3>
+              <p class="text">Articulated robots have rotary joints
+                and between three and six degrees
+                of freedom enabling high flexibility
+                (robot can bend back and forth).</p>
+            </div>
+
+            <div class="col">
+              <h3 class="textheading">Application</h3>
+              <p class="text">This is the text for the first column. You can write more about the content here.</p>
+            </div>
+
+            <div class="col">
+
+              <img src="/assets/images/magzine_images/Stand-alone – articulated.png" alt="Stand-alone – articulated">
+            </div>
+          </div>
+          <hr>
+          <div class="container-column">
+            <div class="col">
+              <h3 class="textheading">Stand alone – delta</h3>
+              <p class="text">Delta (also: parallel) robots have
+                three arms that are connected to
+                a base platform via universal joint
+                Their arms are arranged as parallelograms
+                to restrict the movement
+                of the end platform. Actuators are
+                located at the base platform, so that
+                passive arms can be lightweight
+                and move with great speed.</p>
+            </div>
+
+            <div class="col">
+              <h3 class="textheading">Application</h3>
+              <p class="text">Applications that require great
+                precision and speed: common
+                applications include packaging, high
+                precision assembly, and material
+                handling..</p>
+            </div>
+
+            <div class="col">
+
+              <img src="/assets/images/magzine_images/Stand-alone – delta.png" alt="Stand-alone – delta">
+            </div>
+          </div>
+          <hr>
+
+          <div class="container-column">
+            <div class="col">
+              <h3 class="textheading">Stand alone – gantry/
+                linear/Cartesian</h3>
+              <p class="text">Cartesian robots consist of three
+                axes of control that are situated at
+                90 degree angles of each other.
+                The axes do not rotate but move in
+                straight lines, which simplifies robot
+                control linear robots are comparably
+                simple.</p>
+            </div>
+
+            <div class="col">
+              <h3 class="textheading">Application</h3>
+              <p class="text">With no need for pedestals, Cartesian
+                robots are useful where space
+                is limited, as they can be mounted
+                overhead.</p>
+            </div>
+
+            <div class="col">
+
+              <img src="/assets/images/magzine_images/Stand-alone –gantry.png" alt="Stand-alone –gantry">
+            </div>
+          </div>
+          <hr>
+
+          <div class="container-column">
+            <div class="col">
+              <h3 class="textheading">Stand alone – SCARA</h3>
+              <p class="text">SCARA robots are modelled like human
+                arms with an elbow, shoulder,
+                and wrist. They have three axes
+                for x, y, and z movement and an
+                additional axis for movement of the
+                end effector. The setup of the axes
+                allows the robots to extend their
+                arm and to retract it by folding up.</p>
+            </div>
+
+            <div class="col">
+              <h3 class="textheading">Application</h3>
+              <p class="text">They are used for fast, repetitive,
+                and precise pointto- point movements,
+                such as palletizing, machine
+                loading and assembly.</p>
+            </div>
+
+            <div class="col">
+
+              <img src="/assets/images/magzine_images/Stand-alone – SCARA.png" alt="Stand-alone – SCARA">
+            </div>
+          </div>
+          <hr>
+
+          <div class="container-column">
+            <div class="col">
+              <h3 class="textheading">Collaborative</h3>
+              <p class="text">Collaborative robots directly interact
+                with human workers without safety
+                fences and are equipped with machine
+                learning capabilities for easier
+                programming.</p>
+            </div>
+
+            <div class="col">
+              <h3 class="textheading">Application</h3>
+              <p class="text">They are used to support human
+                workers’ strength and precision for
+                certain movements, in processes
+                that require flexibility and reprogramming,
+                or where space is
+                limited.</p>
+            </div>
+
+            <div class="col">
+
+              <img src="/assets/images/magzine_images/Collaborative.png" alt="collaborative_robots">
+            </div>
+          </div>
+          <hr>
+
+          <div class="container-column">
+            <div class="col">
+              <h3 class="textheading">Autonomous guided
+                vehicles (AGVs) and
+                autonomous mobile
+                robots (AMRs)</h3>
+              <p class="text">AGVs and AMRs are not fixedly
+                installed but mobile. Navigation is
+                either onboard (e.g., camera or laser
+                based) for most advanced types
+                or external (e.g., path based using
+                magnetic tape, wire, or rails on the
+                ground).</p>
+            </div>
+
+            <div class="col">
+              <h3 class="textheading">Application</h3>
+              <p class="text">Mobile robots are used for logistics
+                and delivery as well as for moving
+                pieces, such as boxes, pallets, or
+                tools, in industrial settings between
+                machinery, transfer points, or storage
+                areas.</p>
+            </div>
+
+            <div class="col">
+
+              <img src="/assets/images/magzine_images/Autonomous guided.png" alt="Autonomous guided.">
+            </div>
+          </div>
+          <hr>
+
+
+          <div class="container-column">
+            <div class="col">
+              <h3 class="textheading">Exoskeletons</h3>
+              <p class="text">Exoskeletons are connected to
+                the human body for support during
+                heavy-duty or ergonomically challenging
+                process steps. They are
+                designed to boost the strength of
+                human workers, e.g., increasing
+                humans’ capacity to carry heavy
+                weight.</p>
+            </div>
+
+            <div class="col">
+              <h3 class="textheading">Application</h3>
+              <p class="text">They can be used in industrial applications
+                to support worker movements
+                (e.g., lifting in warehouses).</p>
+            </div>
+
+            <div class="col">
+
+              <img src="/assets/images/magzine_images/Exoskeletons.png" alt="Autonomous guided.">
+            </div>
+          </div>
+          <hr>
+
+          <h2 class="main-heading">Table 2</h2>
+          <h4 class="subheading">Example of automotive production line</h4>
+          <div class="column-info"></div>
+          <div class="column">
+            <div class="row">
+              shipments, including around 7,000
+              AGVs in manufacturing environments.
+              According to IFR,6 another
+              600,000 units are estimated to have
+              been shipped by 2021 (for logistics
+              applications both in- and outside of
+              manufacturing). Typically, AGVs are
+              installed in:
+              <div class="row">
+                <span>1.</span> Automotive,i.e.,OEMs and,
+                increasingly, automotive suppliers,
+                is the largest industry with
+                126,000 units, followed by the
+                electrical and electronics industry
+                with 121,000 units.
+              </div>
+              <div class="row">
+                <span>1.</span> Automotive,i.e.,OEMs and,
+                increasingly, automotive suppliers,
+                is the largest industry with
+                126,000 units, followed by the
+                electrical and electronics industry
+                with 121,000 units.
+              </div>
+            </div>
+          </div>
+        
+        <hr>
+
+        
+        <h4 class="subheading">Exoskeletons</h4>
+        <div class="subheadingtext">
+          <div class="inner-text">
+            <p>Exoskeletons, or human-robot
+              hybrids, are robots connected to the
+              human body to support heavy-duty
+              process steps. The idea is to boost
+              humans’ strength, increasing their
+              capacity to carry heavy weight. Despite
+              their potential, IFR’s estimates
+              for this category are moderate:
+              6,000 powered human exoskeletons
+              units had been sold as of 2017,
+              and IFR forecasts that only another
+              48,000 units will have been sold
+              by 2021. The technology is quite
+              new. Currently, the primary field of
+              applications is rehabilitation. Application
+              areas for use of powered
+              exoskeletons (for lower or upper
+              extremities) have been documented
+              by first demonstrators, and prototypes
+              for other use cases have been
+              tested, e.g., human performance
+              augmentation in defense; rescue
+              and disaster relief; ergonomic
+              support for reducing loads on spine,
+              hips, and shoulders when lifting
+              heavy weights at work, particularly
+              in logistics.</p>
+          </div>
+          </div>
+
+          <hr>
+
+          <h4 class="subheading">Automation cells and solutions</h4>
+          <div class="subheadingtext">
+            <div class="inner-text">
+              <p>Industrial robots are used in an
+                increasing variety of structures and
+                are often employed in complete
+                automation systems, which consist
+                of a multitude of industrial robots.
+                Today, individual robots are applied
+                as a “next step” in automation, for
+                example, for unloading a finished
+                part from a machine tool and afterwards
+                loading a blank part ready
+                for processing. A “second step” in
+                automation are production cells,
+                where a robot has been set up for
+                unloading and loading several machines
+                but was designed as a cell
+                from scratch. These cells are often
+                subsets of full production lines and
+                sold through integrators to the customer.
+                Robotics OEMs offer turnkey
+                cells, including robotic arms,
+                delivery systems such as adhesive
+                dispensers, cell controllers (typically
+                PLC), and safety equipment
+                for specific applications. The aim
+                is to deliver a solution for the end
+                user and reduce complexity for the
+                end customer, who may not have
+                the time or know-how internally. At
+                the same time, increased standardization
+                for the robotics OEM can
+                lower the cost of systems through
+                common solutions. Whether this
+                approach will be successful remains
+                to be seen. Solutions, often highly
+                customer specific, include different
+                robots and cells. Typical examples
+                of automation solutions can be
+                found in automotive (e.g., body in
+                white or paint production lines). Another
+                example is electronics, where
+                production is highly automated and
+                takes place in lights-out, clean-room
+                environments.</p>
+            </div>
+            </div>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--All Robotics End here-->
+
+      </div>
+
+      <!--All wrapper end -->
+
+      </div>
+      </div>
+    </section>
+  </main>
+  <!-- main end here-->
+
+
+
+
+
+
+
+
+
+
+  <!-- footer start here========================= -->
+  <footer>
+    <div class="footerUpper">
+      <div class="wrapper">
+        <div class="navigation">
+          <ul>
+            <li>
+              <a href="/about.html" target="_blank" title="About Us">About Us</a>
+            </li>
+            <li>
+              <a href="/contact.html" target="_blank" title="Contact Us">Contact Us</a>
+            </li>
+            <li>
+              <a href="#cookiesPolicy">cookies policy</a>
+            </li>
+            <li class="privacyPolicy">
+              <a href="#" title="privacy policy">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="imprintAutomation">
+          <ul>
+            <li><a href="https://goo.gl/maps/j2Vkj57eJPxxYRFr9"><b>Address: </b>6B/4A,Sangeeta Apts,Juhu
+                Road,Santacruz(W), Mumbai-400049</a></li>
+            <li><a href=""><b>Content & Bussiness Manager: </b>Anchal Tiwari</a></li>
+            <li><a href="mailto:anchal.tiwari@imprint-magazine.in"><b>Email: </b>anchal.tiwari@imprint-magazine.in</a>
+            </li>
+            <li><a href=""><b>Phone: </b>9821135542</a></li>
+            <li><a href=""><b>Landline: </b>02235785032</a></li>
+          </ul>
+        </div>
+        <div class="infocast">
+          <figure>
+            <img src="/assets/images/infocastLogo.png" alt="Infocast System Pvt Ltd">
+          </figure>
+          <p>
+            <a href="https://infocast.in/" target="_blank" title="infocast" id="infocastLogo">Infocast System Pvt
+              Ltd</a>
+          </p>
+          <ul>
+            <li><a href="https://paratechexpo.in/paraExpoExplore.html" title="Expo">Expo</a></li>
+            <li><a href="https://imprint-magazine.in/magazine.html" title="Magazine">Magazine</a></li>
+            <li><a href="" title="Seminar">Seminar</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <div class="footerLower">
+      <div class="wrapper">
+        <div class="copyRight">
+          Copyright &copy; 1961 Imprint
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+  <!-- js ionic file here========================= -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <!-- js link here======================= -->
+  <script src="/assets/js/header.js"></script>
+  <script src="/assets/js/aside.js"></script>
+</body>
+
+
+
+
+</html>
