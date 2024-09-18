@@ -1,0 +1,165 @@
+footer .wrapper{
+    padding: 0 100px;
+
+}
+
+footer a {
+    color: #000;
+    padding-bottom: 2px;
+}
+
+footer a:hover {
+    color: #0e5283;
+    padding-bottom: 2px;
+}
+
+footer img {
+    width: 150px;
+}
+
+.footerUpper{
+    padding:50px 0  20px 0;
+    background-color: #d4d6f1;
+}
+.imprintAutomation {
+    padding: 0 20px;
+}
+
+.imprintAutomation li {
+    padding-bottom: 10px;
+}
+
+.navigation li {
+    margin-bottom: 10px;
+    border-bottom: 2px solid transparent;
+
+}
+
+.navigation li:hover {
+    border-bottom: 2px solid #0e5283;
+}
+
+.navigation,
+.infocast {
+    text-align: center;
+}
+
+#infocastLogo {
+    font-size: 20px;
+}
+
+.infocast ul,
+.footerUpper .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infocast ul {
+    padding: 10px;
+}
+
+.infocast ul li::before {
+    content: "\7c";
+    font-family: "fontAwesome";
+    padding: 0 5px;
+    font-weight: bold;
+}
+
+
+
+.footerLower,
+.footerLower a {
+    color: #fff;
+}
+
+.footerLower .wrapper {
+    text-align: center;
+}
+
+.footerLower {
+    background-color: #0e5283;
+    padding: 10px 0;
+    font-size: 17px;
+}
+
+/* responsive start here===================== */
+@media screen and (max-width: 1115px) {
+    footer .wrapper{
+        padding: 0 50px;
+    
+    }
+}
+
+@media screen and (max-width: 995px) {
+    footer .wrapper{
+        padding: 0 40px;
+    
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    footer {
+        text-align: center;
+    }
+
+    .infocast ul {
+        justify-content: center;
+    }
+
+    .footerUpper .wrapper {
+        display: block;
+    }
+
+    .navigation li ,
+    .navigation li:hover {
+        margin-bottom: 10px;
+        border-bottom: none;
+    }
+
+    .navigation li a{
+        margin-bottom: 10px;
+        border-bottom: 2px solid transparent;
+    
+    }
+    
+    .navigation li a:hover {
+        border-bottom: 2px solid #0e5283;
+    }
+
+    .navigation,
+    .imprintAutomation,
+    .infocast {
+        padding: 10px 0 !important;
+    }
+
+    footer .wrapper {
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    footer .wrapper {
+        padding: 0 20px;
+    }
+    footer img {
+        width: 120px;
+    }
+    .footerLower,
+    #infocastLogo,
+    .imprintAutomation li {
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+
+footer .wrapper {
+    padding: 0 10px;
+}
+}
+
+
+/* responsive end here===================== */

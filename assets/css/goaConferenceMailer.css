@@ -1,0 +1,47 @@
+.goaConferenceMailer{
+    padding: 20px;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.goaConferenceMailer span{
+    font-size: 10px !important;
+}
+
+.goaConferenceMailer a{
+    color: #0070E0 !important;
+}
+
+.goaConferenceHeading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.goaConferenceHeading h1{
+   font-size: 18px;
+   text-align: left;
+}
+
+.goaConferenceHeading img{
+    width: 100px !important;
+}
+
+.magazineAndInfocast{
+    display: flex;
+    justify-content: space-between;
+}
+
+#janFebCover{
+    width: 100px !important;
+}
+
+.goaConferenceMailer #published{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.goaConferenceMailer #officialAD{
+    padding: 10px 0;
+}

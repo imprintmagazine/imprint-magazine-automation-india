@@ -1,1 +1,89 @@
+/* universal code here======================= */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
 
+/* wrapper code here======================= */
+.wrapper {
+  width: 95%;
+  max-width: 1365px;
+  margin: 0 auto;
+}
+
+
+/* all same tags here==================== */
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.aboutUs h2,
+.ourTeam h2,
+.contactUs h2 {
+  font-size: 35px;
+  padding: 5px;
+  width: 30%;
+  color: #0E5283;
+  border-bottom: 3px solid #0E5283;
+}
+
+.aboutUs,
+.contactUs,
+.ourTeam {
+  margin: 20px 0;
+}
+
+.aboutUsHeading,
+.contactUsHeading,
+.teamHeading {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 995px) {
+
+  .aboutUs h2,
+  .ourTeam h2,
+  .contactUs h2 {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+
+  .aboutUs h2,
+  .ourTeam h2,
+  .contactUs h2 {
+    width: 100%;
+  }
+
+  .ourTeam figure img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .ourTeam figure figcaption {
+    padding: 0;
+    width: 90%;
+    line-height: 1.6;
+  }
+}
+
+/* 
+@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 995px) {}
+@media screen and (max-width: 786px) {}
+@media screen and (max-width: 580px) {}
+@media screen and (max-width: 320px) {}
+ */

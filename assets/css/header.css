@@ -1,0 +1,304 @@
+html{
+  overflow-x: hidden;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/* header start here========================================== */
+
+header {
+  position: sticky;
+  top: 0 !important;
+  z-index: 2;
+}
+
+
+.headerTop img,
+header img {
+  width: 200px;
+}
+
+.headerTop .imprintLogos{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul,
+.headerBottom .wrapper{
+  display: flex;
+}
+
+header ul,
+.headerBottom .wrapper {
+  justify-content: space-between;
+}
+
+.headerBottom .wrapper {
+  align-items: center;
+
+}
+
+.vidProLogo{
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+  }
+
+
+.headerTop a {
+  color: #000;
+}
+
+
+.indiaAutomationMagazine {
+  background-color: #ff0000;
+  color: #fff !important;
+  padding: 10px;
+}
+
+.videoProdcastLogo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+
+.videoProdcastLogo a {
+  /* text-indent: -9999px; */
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  padding: 5px 10px 0;
+}
+
+.videoProdcastLogo a::after {
+  font-family: "fontAwesome";
+  text-indent: 0;
+  border: 2px solid #000;
+  padding: 4px 8px;
+}
+
+.videoProdcastLogo #video::after {
+  content: "\f04b";
+}
+
+.videoProdcastLogo #podcast::after {
+  content: "\f025";
+}
+
+.videoProdcastLogo a:hover::after {
+  color: #fff;
+  background-color: #0e5283;
+  border-color: #0e5283;
+}
+
+.headerBottom {
+  background-color: #0e5283;
+  padding: 15px 0;
+}
+
+.headerBottom .videoProdcastLogo {
+  display: none;
+}
+
+.navbar {
+  width: 100%;
+}
+
+
+
+.headerBottom nav a {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.headerBottom nav a::after {
+  content: '';
+  display: block;
+  width: 0;
+  /* Hide border initially */
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s ease;
+}
+
+.headerBottom nav a:hover::after {
+  width: 100%;
+  /* Show border on hover */
+}
+
+/* dropdown======================== */
+.fa {
+  padding: 0 0 0 5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #0e5283;
+  z-index: 1;
+  padding: 10px 40px;
+}
+
+.dropdown-content a {
+  padding: 10px;
+  display: block !important;
+}
+
+/* .dropdown:hover .dropdown-content {
+  display: block;
+} */
+/* dropdown============================================== */
+
+
+/* menu and close icon */
+.mobileNavBtn {
+  display: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.mobileNavIcon {
+  font-size: 30px;
+  color: #fff;
+}
+
+.mobileNavIcon[name="close-outline"] {
+  display: none;
+}
+
+/* header end here========================================== */
+
+/* responsive start here============================================ */
+@media screen and (max-width: 995px) {
+  .indiaAutomationMagazine {
+    font-size: 25px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 885px) {
+  /* .indiaAutomationMagazine {
+        font-size: 18px;
+    } */
+}
+
+@media screen and (max-width: 768px) {
+
+  .headerBottom .videoProdcastLogo {
+    display: flex;
+
+  }
+
+  .headerBottom .videoProdcastLogo a::after {
+    border: 2px solid #fff;
+  }
+
+  .headerBottom .videoProdcastLogo a:hover::after {
+    color: #0e5283;
+    background-color: #fff;
+  }
+
+
+  .mobileNavBtn {
+    display: block;
+  }
+
+  .headerBottom {
+    position: relative;
+    padding: 5px 0;
+  }
+
+  .navbar {
+    /* display: none; */
+    /* width: 100%; */
+    height: 100vh;
+    background-color: #0e5283;
+    position: absolute;
+    left: 0;
+    top: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* TO GET TRANSITION */
+    transform: translateX(100%);
+    transform: all 0.5 linear;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+  }
+
+  .active .navbar {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .active .mobileNavBtn .mobileNavIcon[name="close-outline"] {
+    display: block;
+  }
+
+  .active .mobileNavBtn .mobileNavIcon[name="menu-outline"] {
+    display: none;
+  }
+
+  .navbarList {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbarList li {
+    padding: 10px 0;
+  }
+
+  .dropdown-content {
+    position: static;
+    background-color: red;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header img {
+    width: 150px;
+  }
+
+  .indiaAutomationMagazine {
+    font-size: 20px;
+  }
+  .videoProdcastLogo a,
+  .videoProdcastLogo a::after {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  header img {
+    width: 120px;
+  }
+
+  .indiaAutomationMagazine {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  header img {
+    width: 100px;
+  }
+
+  .indiaAutomationMagazine {
+    font-size: 15px;
+  }
+}
+
+/* responsive end here============================================ */

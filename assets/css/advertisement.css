@@ -1,0 +1,170 @@
+.ourAdvertisement {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.ourAdvertisement img {
+    border: 1px solid #000;
+}
+
+.ourAdvertisement .magazineAndMediaCover{
+    display: flex;
+}
+
+.ourAdvertisement .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ourAdvertisement div {
+    padding: 20px;
+}
+
+.ourAdvertisement figcaption h2 {
+    font-size: 20px;
+}
+
+.ourAdvertisement #mediakitCoverPage,
+.ourAdvertisement #magazineCoverPage {
+    width: 200px !important;
+
+}
+
+.ourAdvertisement #paraTechExpoLogo {
+    width: 450px !important;
+
+}
+
+
+/* advertishment=============================================== */
+.advertisement {
+    line-height: 1.6;
+    /* border: 0.2px solid #000; */
+}
+
+.advertisement .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advertisement .goaConferenceText,
+.advertisement .goaConferenceImg {
+    padding: 0 20px;
+}
+
+.advertisement .goaConferenceImg {
+    width: 70%;
+}
+
+.advertisement .goaConferenceText {
+    background-color: red;
+    color: #fff;
+    padding: 20px;
+    border: 1px solid red;
+}
+
+.advertisement .goaConferenceImg img {
+    width: 200px;
+    border: 1px solid #5DB6FA;
+}
+
+.advertisement figcaption {
+    text-align: center;
+}
+
+.advertisement figcaption h2 {
+    font-size: 30px !important;
+
+}
+
+.goaConferenceText img {
+    width: 100px;
+}
+
+.goaConferenceText .nextMailerHeading p{
+font-size: 25px;
+padding: 10px 0;
+}
+
+.goaConferenceText figure {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.advertisement .dateLocation {
+    font-size: 12px;
+}
+
+.goaConferenceText h1 {
+    font-size: 50px;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+.advertisement p {
+    font-size: 12px;
+    text-align: center;
+}
+
+.advertisement span {
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.advertisement .eventHighlights {
+    padding: 10px 0;
+}
+
+.advertisement ul {
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.advertisement ul h3 {
+    font-size: 20px;
+}
+
+.goaConferenceText .scanner {
+    display: flex;
+    justify-content: space-between;
+}
+
+#supertech-logo {
+    width: 200px;
+}
+
+@media screen and (max-width: 1020px) {
+    .ourAdvertisement .wrapper,
+    .advertisement .wrapper {
+        flex-direction: column;
+    }
+
+    .advertisement .goaConferenceImg {
+        width: 100%;
+    }
+
+    .goaConferenceText h1 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .ourAdvertisement #mediakitCoverPage,
+.ourAdvertisement #magazineCoverPage {
+    width: 100% !important;
+
+}
+
+.ourAdvertisement #paraTechExpoLogo {
+    width: 100% !important;
+
+}
+}
