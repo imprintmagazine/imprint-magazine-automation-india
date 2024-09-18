@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Automation Product News</title>
+</head>
+
+<!-- awesome css link here -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css"
+  integrity="sha512-72McA95q/YhjwmWFMGe8RI3aZIMCTJWPBbV8iQY3jy1z9+bi6+jHnERuNrDPo/WGYEzzNs4WdHNyyEr/yXJ9pA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="/assets/css/header.css">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/footer.css">
+<link rel="stylesheet" href="/assets/css/asideLinks.css">
+<link rel="stylesheet" href="/assets/automation_news/automation_news.css">
+
+<body>
+  <!-- header start here========================= -->
+  <div class="headerTop">
+    <div class="wrapper">
+      <ul class="imprintLogos">
+        <li>
+          <a href="/index.html" class="logo">
+            <img src="/assets/images/imprintAutomationIndiaLogo.jpeg" alt="Automation Logo" />
+          </a>
+        </li>
+        <li>
+          <a href="/imprintArchive.html" class="logo">
+            <img src="/assets/images/since 1961.png" alt="Magazine Logo" />
+          </a>
+        </li>
+      </ul>
+
+      <ul class="videoProdcastLogo">
+        <li>
+          <a href="#" class="indiaAutomationMagazine">
+            India's Automation Magazine
+          </a>
+        </li>
+        <li class="vidProLogo">
+          <a href="#" id="video" title="watch video">video</a>
+          <a href="#" id="podcast" title="listen podcast">podcast</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <header class="header">
+    <div class="headerBottom">
+      <div class="wrapper">
+        <nav class="navbar">
+          <ul class="navbarList">
+            <li>
+              <a href="/index.html" title="Home">Home</a>
+            </li>
+            <li class="dropdown" onclick="show_hide()">
+              <a href="#" title="Automation WorldWide" id="automationWorldWide" class="dropdown-btn">Automation
+                WorldWide<i class="fa fa-caret-down"></i>
+              </a>
+              <div class="dropdown-content">
+                <a href="#" title="Global Expo">Global Expo</a>
+                <a href="#" title="Association">Association</a>
+                <a href="#" title="Conference">Conference</a>
+                <!-- <a href="#" title="Magazine">Magazine</a> -->
+              </div>
+            </li>
+            <!-- <li>
+              <a href="#internationalAssociation" title="International Association">International Association</a>
+            </li> -->
+            <li>
+              <!-- <a href="#projects" title="Projects">Projects</a> -->
+              <a href="/magazine.html" title="Magazine">Imprint Automation India Magzine</a>
+            </li>
+            <li>
+              <a href="/imprintArchive.html" title="Imprint Archive">Imprint Archive</a>
+            </li>
+            <li>
+              <a href="/ourTeam.html" title="Our Team">Our Team</a>
+            </li>
+            <li>
+              <a href="/contact.html" title="Contact Us">Contact Us</a>
+            </li>
+            <li>
+              <a href="/about.html" title="About Us">About Us</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="videoProdcastLogo">
+          <li>
+            <a href="#" id="video" title="watch video">video</a>
+          </li>
+          <li>
+            <a href="#" id="podcast" title="listen podcast">podcast</a>
+          </li>
+        </ul>
+        <div class="mobileNavBtn">
+          <ion-icon name="menu-outline" class="mobileNavIcon"></ion-icon>
+          <ion-icon name="close-outline" class="mobileNavIcon"></ion-icon>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header end here========================= -->
+
+  <div class="asideLinks">
+    <ul>
+      <li><a href="/assets/rate/rate.html" onclick="showFullName(this, 'Print Advertising Specification & Rate')">Print
+          Advertising
+          Specification & Rate</a></li>
+      <li><a href="/assets/automation_trends/automation_trends.html"
+          onclick="showFullName(this, 'Automation Trends')">Automation Trends</a></li>
+      <li><a href="/assets/automation_news/automation_news.html"
+          onclick="showFullName(this, 'Automation News')">Automation News</a></li>
+      <li><a href="/assets/automation_robotics/automation_robotics.html"
+          onclick="showFullName(this, 'Automation Robotics')">Automation Robotics</a></li>
+      <li><a href="/assets/artifical_intelligence/artificial_intelligence.html"
+          onclick="showFullName(this, 'Artificial Intelligence')">Artificial Intelligence</a></li>
+      <!-- <li><a href="#" onclick="showFullName(this, 'Automation IMTEX')">Automation IMTEX</a></li> -->
+      <li><a href="/assets/automation_articles/automation_articles.html"
+          onclick="showFullName(this, 'Automation Articles')">Automation Articles</a></li>
+      <li><a href="/assets/mediakit/mediakit.html" onclick="showFullName(this, 'Mediakit')">Mediakit</a></li>
+      <li><a href="/assets/editorial_calender/editorial_calender.html"
+          onclick="showFullName(this, 'Editorial Calendar')">Editorial Calendar</a></li>
+      <li><a href="#" onclick="showFullName(this, 'Digital Campaign')">Digital Campaign</a></li>
+      <li><a href="#" onclick="showFullName(this, 'Advertisement')">Advertisement</a></li>
+    </ul>
+  </div>
+  <div class="arrow-btn">
+    <ion-icon name="arrow-forward-outline" class="arrow-icon"></ion-icon>
+    <ion-icon name="arrow-back-outline" class="arrow-icon"></ion-icon>
+  </div>
+
+  <!--main start here-->
+  <main>
+    <section>
+      <div class="wrapper">
+        <div class="allNews">
+
+          <h2 class="heading">Automation News</h2>
+          <h4 class="subheading">
+            KOLLMORGEN Automated Guided Vehicles
+          </h4>
+          <div class="link-span">
+            <!-- <span class="highlight">KOLLMORGEN</span> -->
+            <a href="https://www.kollmorgen.com/en-us">www.kollmorgen.com</a>
+          </div>
+
+          <div class="upper-columns">
+            <div class="column">
+              <p class="text">The world of Automated Guided
+                Vehicles is expanding.
+                New vehicle types such as
+                carts and mobile robots are gaining
+                ground as well as reflector and
+                natural navigation technologies.
+                Together they create new ways for
+                companies to improve efficiency in
+                material handling and warehousing,
+                with a short payback period.
+                The LS2000 navigation sensor
+                and CVC700 give your automated
+                guided vehicles the eyes and brains
+                needed for fast and precise movements.
+                <b>Kollmorgen was founded by Otto Kollmorgen in Northampton, Massachusetts in 1916 to
+                  design and make periscopes for the U.S. Navy's young submarine division.</b>
+              </p>
+            </div>
+            <div class="image1">
+              <figure>
+                <img src="/assets/images/magzine_images/product2.png" alt="product2">
+                <figcaption>CVC700 vehicle controller</figcaption>
+              </figure>
+            </div>
+            <div class="image2">
+              <figure>
+                <img src="/assets/images/magzine_images/product1.png" alt="product2">
+                <figcaption>LS2000 navigation sensor</figcaption>
+              </figure>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="info-columns">
+            <div class="column">
+              <h4 class="subheading">Freedom to choose</h4>
+              <p class="text">Navigate via reflectors, natural objects or a combination of natural navigation with
+                reflectors added where necessary. LS2000 and CVC700 offer you lots of possibilities.</p>
+            </div>
+            <div class="column">
+              <h4 class="subheading">Always in control</h4>
+              <p class="text">LS2000 and CVC700 provide your automated guided vehicles with accurate data—the basis for
+                fast and precise movements in free-ranging navigation.</p>
+            </div>
+            <div class="column">
+              <h4 class="subheading">Built to last</h4>
+              <p class="text">No moving external parts on LS2000. Rugged design and IP 65 classification for both LS2000
+                and CVC700. Compact design makes them easy to fit. Temperature range: –30°C to +55°C.</p>
+            </div>
+
+          </div>
+
+
+          <hr>
+          <div class="link-span">
+            <h4 class="heading">
+              Autonics BD Series
+
+            </h4>
+            <div class="link-span">
+              <!-- <span class="highlight">Autonics</span>  -->
+              <a href="https://www.autonics.com/kr/main">www.autonics.com</a>
+            </div>
+            <div class="text-image-container">
+              <div class="inner-text">
+                <p>
+                  Laser Displacement Sensors (Sensor Head and Amplifier Unit) The BD series laser displacement sensors
+                  can
+                  measure thickness, width, level difference, disparity, curve, and evenness of target objects by
+                  detecting the amount of displacement. The sensors offer high precision and reliability.
+                  <br><br>
+                  <b>Since its establishment in 1977, Autonics has been developing the overseas market with advanced
+                    sensing and control solutions. It now operates 11 overseas branches and has more than 100 local
+                    sales
+                    agencies, with almost 50% of its total revenue coming from international markets.</b>
+                </p>
+              </div>
+              <div class="image3">
+                <figure>
+                  <img src="/assets/images/magzine_images/BD Series.png" alt="BD_Series_Image">
+                  <figcaption>Sensor Head and Amplifier Unit</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+          <div class="link-span">
+            <h4 class="heading">
+              Endress and Hauser Liquiline CM448
+
+            </h4>
+            <div class="link-span">
+              <!-- <span class="highlight"> Endress + Hauser</span>  -->
+              <a href="https://www.endress.com/en">www.endress.com</a>
+            </div>
+            <div class="text-image-container">
+              <div class="inner-text">
+                <p>
+                  The Liquiline CM448 transmitter
+                  allows you to connect
+                  up to 8 Memosens sensors of
+                  your choice from over 12 measurement
+                  parameters. It offers automatic
+                  sensor recognition, simple operation,
+                  and standardized spare parts
+                  with all other devices of the Liquiline
+                  platform. With its inputs, outputs,
+                  controllers, and math modules, you
+                  can even control cleaning systems
+                  or dosing pumps. Heartbeat Technology
+                  helps you find the ideal
+                  balance between measuring point
+                  availability and maintenance costs.
+                  <br><br>
+                  <b>Endress+Hauser was founded in 1953 in Lörrach, Germany. Swiss engineer Georg H.</b>
+                </p>
+              </div>
+              <div class="image4">
+                <figure>
+                  <img src="/assets/images/magzine_images/CM-488.jpg" alt="CM-488">
+                  <figcaption>CM-488</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="link-span">
+            <h4 class="heading">
+              Advantech UNO-100/300 Edge controllers
+
+            </h4>
+            <div class="link-span">
+
+              <a href="https://www.advantech.com/en">www.advantech.com</a>
+            </div>
+            <div class="text-image-container">
+              <div class="inner-text">
+                <p>
+                  Advantech UNO-100/300 edge
+                  controllers for machine to intelligence
+                  applications!Aimed
+                  at factory applications such as real
+                  time monitoring, data management,
+                  and remote control, Advantech’s
+                  new UNO-100/300 edge controllers
+                  feature a rugged design with wide
+                  operating temperature, shock/vibration
+                  tolerance, and a built-in TPM
+                  2.0 module to ensure secure data
+                  transfers and reliable operations in harsh industrial environments. Their
+                  modular form factor allows these
+                  controllers to be flexibly deployed
+                  and come with diverse interfaces
+                  for optional expansion, such as
+                  PCIe for high-density I/O, PCI for
+                  motion cards, and iDoor expansion
+                  for fieldbus modules. This customizable
+                  functionality streamlines
+                  deployment and maintenance while
+                  providing cost-effective upgrades,
+                  making UNO-100/300 series edge
+                  controllers future-proof solutions
+                  ideal for realizing intelligent factory
+                  operations. <br>
+                  <b>When Advantech was established
+                    in 1983, its focus
+                    was on promoting industrial
+                    automation. Following
+                    several corporate transformations,
+                    Advantech has
+                    successfully developed
+                    software and IoT cloud
+                    platforms, and established
+                    complete solutions in the
+                    field of AIoT applications.</b>
+                </p>
+              </div>
+              <div class="image5">
+                <figure>
+                  <img src="/assets/images/magzine_images/uno-100-300_edge_controllers.jpeg"
+                    alt="uno-100-300_edge_controllers">
+                  <figcaption>UNO-100/300 Edge controllers</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="link-span">
+            <h4 class="heading">
+              Moxa AIG-301 Series
+            </h4>
+            <div class="link-span">
+
+              <a href="https://www.moxa.com/en">www.moxa.com</a>
+            </div>
+            <div class="text-image-container">
+              <div class="inner-text">
+                <p>
+                  The AIG-301 Series advanced
+                  IIoT gateways are designed
+                  for Industrial IoT applications,
+                  especially for distributed and
+                  unmanned sites in harsh operating
+                  environments. The gateways implement
+                  Modbus RTU/TCP master/
+                  client protocols which can help
+                  you to effortlessly collect data from
+                  Modbus devices. Moreover, Azure
+                  IoT Edge software is preloaded
+                  and seamlessly integrated with the
+                  AIG-301 to enable easy, reliable,
+                  yet secure sensor-to-cloud connectivity
+                  for data acquisition and device
+                  management using the Azure
+                  Cloud solution. With the use of the
+                  Things Pro Proxy utility, the device
+                  provisioning process is easier than ever. Thanks to the robust OTA
+                  function, you never have to worry
+                  about system failure during software
+                  upgrades. With the Secure Boot function enabled, you can prevent
+                  malicious software injection attacks,
+                  especially during the boot-up
+                  process. <br>
+                  <b>Moxa Technologies is a Taiwanese technology company specializing in edge connectivity,
+                    industrial computing, and network infrastructure solutions.</b>
+                </p>
+              </div>
+              <div class="image6">
+                <figure>
+                  <img src="/assets/images/magzine_images/AIG-301Series-removebg-preview.png" alt="AIG-301Series">
+                  <figcaption>AIG-301Series</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="link-span">
+            <h4 class="heading">
+              Murr Elektronik Vario-X
+            </h4>
+            <div class="link-span">
+
+              <a href="https://www.murrelektronik.com/">www.murrelektronik.com</a>
+            </div>
+            <div class="text-image-container">
+              <div class="inner-text">
+                <p>
+                  Murr Elektronik Vario-X is
+                  a holistic automation system
+                  from the sensor to the
+                  cloud. The system is designed
+                  with machine builders in mind. By
+                  applying agile design processes,
+                  we work together from project
+                  planning through the creation of a
+                  digital twins enabling the seamless
+                  integration of IT and OT. With apps,
+                  you can monitor your changing
+                  factory environment via secure endpoint
+                  devices and use that data to
+                  optimize production – and of course
+                  all this structured in a modular
+                  way. The highlight, however, is the
+                  advanced sensor technology integrated
+                  into each module to ensure
+                  optimal performance and availability, guaranteed by predictive maintenance.<br>
+                  <b>Franz Hafner founded Murrelektronik in 1975 in Oppenweiler, Germany, when he began
+                    selling a single product, the RC-501/220, a surge suppression module for Siemens contactors
+                    that he produced in his garage.</b>
+                </p>
+              </div>
+              <div class="image5">
+                <figure>
+                  <img src="/assets/images/magzine_images/Vario-X.jpeg" alt="Vario-X">
+                  <figcaption>Vario-X</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="link-span">
+            <h4 class="heading">
+              OMRON TM20 Collaborative Robot
+            </h4>
+            <div class="link-span">
+
+              <a href="https://www.moxa.com/en">www.moxa.com</a>
+            </div>
+            <div class="text-image-container">
+              <div class="inner-text">
+                <p>
+                  The OMRON TM20 is the
+                  latest addition to the OMRON
+                  family of TM cobots, which are
+                  known for their ease of use, reliability,
+                  and safety. It is designed to
+                  work seamlessly with other OMRON
+                  products, including sensors, controllers,
+                  and software, to provide a
+                  comprehensive automation solution
+                  for industrial customers. The new
+                  Cobot is ideal for tasks such as
+                  palletizing, machine tending and
+                  material handling. Whilst managing
+                  heavy payloads, the OMRON TM20
+                  has a small footprint and a reach of
+                  1,3 meters.
+                  <br>
+                  <b>Moxa Technologies is a Taiwanese technology company specializing in edge connectivity,
+                    industrial computing, and network infrastructure solutions.</b>
+                </p>
+              </div>
+              <div class="image5">
+                <figure>
+                  <img src="/assets/images/magzine_images/TM20.jpeg" alt="TM20">
+                  <figcaption>TM20</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+
+          <div class="link-span">
+            <h4 class="heading">
+              LAPP India
+            </h4>
+            <div class="link-span">
+
+              <a href="https://www.lapp.com/en/global/">www.lapp.com</a>
+            </div>
+            <div class="text-image-container">
+              <div class="inner-text">
+                <p>
+                  We will be displaying our extensive
+                  range of industrial
+                  communication solutions
+                  such as data communication cables
+                  for FIELDBUS and ETHERNET
+                  technology, industrial connectors,
+                  active network components such as
+                  ETHERLINE® ACCESS - Industrial
+                  Network Switch for smart factories,
+                  ETHERLINE® GUARD - a stationary
+                  monitoring device that continuously
+                  monitors an Ethernet cable,
+                  detects a decline in performance
+                  and display the cable status, and
+                  accessories.
+                </p>
+              </div>
+              <div class="image5">
+                <figure>
+                  <img src="/assets/images/magzine_images/LAPP.jpeg" alt="LAPP">
+                  <figcaption>LAPP</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+
+          <hr>
+          <div class="link-span">
+            <h4 class="heading">
+              PEER ROBOTICS
+            </h4>
+            <div class="link-span">
+
+              <a href="https://www.peerrobotics.ai/">www.peerrobotics.ai</a>
+            </div>
+            <div class="text-image-container">
+              <div class="inner-text">
+                <p>
+                  At Peer Robotics, our mission
+                  is to revolutionize manufacturing
+                  with simple, affordable,
+                  and intelligent robotic automation
+                  solutions. Our collaborative mobile
+                  robots have the unique ability
+                  to learn from humans in real-time
+                  through our Person2Peer technology.
+                  This makes it easy for anyone
+                  to task our robots for an application,
+                  whether you’re a first-time robot
+                  user or a seasoned engineer. You
+                  can ensure not only instant deployment,
+                  but also the flexibility to easily
+                  redeploy them for different tasks
+                  as your needs evolve, enabling a
+                  resilient supply chain. <b>Peer Robotics delivers human-centric and adaptable mobile robots for
+                    efficient material
+                    movement in warehousing, manufacturing, and assembly lines. Gurugram based Peer
+                    Robotics as a startup was founded in 2019 by Rishabh Agarwal and Tanya Ra</b>
+                </p>
+              </div>
+              <div class="image5">
+                <figure>
+                  <img src="/assets/images/magzine_images/peer-robotics.jpeg" alt="peer-robotics">
+                  <figcaption>RM20</figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+
+
+          <!--All news end here-->
+        </div>
+    </section>
+  </main>
+
+  <!-- main end here-->
+
+
+
+
+
+
+
+
+
+
+  <!-- footer start here========================= -->
+  <footer>
+    <div class="footerUpper">
+      <div class="wrapper">
+        <div class="navigation">
+          <ul>
+            <li>
+              <a href="/about.html" target="_blank" title="About Us">About Us</a>
+            </li>
+            <li>
+              <a href="/contact.html" target="_blank" title="Contact Us">Contact Us</a>
+            </li>
+            <li>
+              <a href="#cookiesPolicy">cookies policy</a>
+            </li>
+            <li class="privacyPolicy">
+              <a href="#" title="privacy policy">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="imprintAutomation">
+          <ul>
+            <li><a href="https://goo.gl/maps/j2Vkj57eJPxxYRFr9"><b>Address: </b>6B/4A,Sangeeta Apts,Juhu
+                Road,Santacruz(W), Mumbai-400049</a></li>
+            <li><a href=""><b>Content & Bussiness Manager: </b>Anchal Tiwari</a></li>
+            <li><a href="mailto:anchal.tiwari@imprint-magazine.in"><b>Email: </b>anchal.tiwari@imprint-magazine.in</a>
+            </li>
+            <li><a href=""><b>Phone: </b>9821135542</a></li>
+            <li><a href=""><b>Landline: </b>02235785032</a></li>
+          </ul>
+        </div>
+        <div class="infocast">
+          <figure>
+            <img src="/assets/images/infocastLogo.png" alt="Infocast System Pvt Ltd">
+          </figure>
+          <p>
+            <a href="https://infocast.in/" target="_blank" title="infocast" id="infocastLogo">Infocast System Pvt
+              Ltd</a>
+          </p>
+          <ul>
+            <li><a href="https://paratechexpo.in/paraExpoExplore.html" title="Expo">Expo</a></li>
+            <li><a href="https://imprint-magazine.in/magazine.html" title="Magazine">Magazine</a></li>
+            <li><a href="" title="Seminar">Seminar</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <div class="footerLower">
+      <div class="wrapper">
+        <div class="copyRight">
+          Copyright &copy; 1961 Imprint
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+  <!-- js ionic file here========================= -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <!-- js link here======================= -->
+  <script src="/assets/js/header.js"></script>
+  <script src="/assets/js/aside.js"></script>
+</body>
+
+
+
+
+</html>
