@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+
+  <link rel="stylesheet" href="./assets/css/contactUs.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- header -->
+    <div id="header"></div>
+
+    <!-- main start here-->
+    <div class="asideLinks">
+      <ul>
+        <li><a href="/assets/rate/rate.html" onclick="showFullName(this, 'Print Advertising Specification & Rate')">Print Advertising
+          Specification & Rate</a></li>
+      <li><a href="./assets/automation_trends/automation_trends.html" onclick="showFullName(this, 'Automation Trends')">Automation Trends</a></li>
+      <li><a href="./assets/automation_news/automation_news.html" onclick="showFullName(this, 'Automation News')">Automation News</a></li>
+      <li><a href="./assets/automation_robotics/automation_robotics.html" onclick="showFullName(this, 'Automation Robotics')">Automation Robotics</a></li>
+      <li><a href="./assets/artifical_intelligence/artificial_intelligence.html" onclick="showFullName(this, 'Artificial Intelligence')">Artificial Intelligence</a></li>
+      <!-- <li><a href="#" onclick="showFullName(this, 'Automation IMTEX')">Automation IMTEX</a></li> -->
+      <li><a href="./assets/automation_articles/automation_articles.html" onclick="showFullName(this, 'Automation Articles')">Automation Articles</a></li>
+      <li><a href="./assets/mediakit/mediakit.html" onclick="showFullName(this, 'Mediakit')">Mediakit</a></li>
+      <li><a href="./assets/editorial_calender/editorial_calender.html" onclick="showFullName(this, 'Editorial Calendar')">Editorial Calendar</a></li>
+      <li><a href="#" onclick="showFullName(this, 'Digital Campaign')">Digital Campaign</a></li>
+      <li><a href="#" onclick="showFullName(this, 'Advertisement')">Advertisement</a></li>
+      </ul>
+    </div>
+    <div class="arrow-btn">
+      <ion-icon name="arrow-forward-outline" class="arrow-icon"></ion-icon>
+      <ion-icon name="arrow-back-outline" class="arrow-icon"></ion-icon>
+    </div>
+    <main>
+      <section class="contactUs">
+        <div class="wrapper">
+          <div class="contactUsHeading">
+            <h2>Contact Us</h2>
+          </div>
+          <form action="https://api.web3forms.com/submit" method="POST" id="contactForm">
+            <input type="hidden" name="access_key" value="a410896a-994b-44e0-8d40-193bdafe761e">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+    
+            <button type="submit">Submit</button>
+        </form>
+        </div>
+      </section>
+    </main>
+    <!-- main end here-->
+
+    <!-- footer -->
+    <div id="footer"></div>
+  </div>
+
+  <!-- js link for header and footer -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+    <script src="assets/js/aside.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function () {
+      $("#header").load("./header.html");
+      $("#footer").load("./footer.html");
+    });
+  </script>
+</body>
+
+</html>
