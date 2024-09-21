@@ -42,7 +42,7 @@
 
   .arrow-btn {
     position: fixed;
-    top: 50%;
+    top: 40%;
     left: 0;
     height: 20vh;
     background-color: #0e5283;
@@ -57,7 +57,7 @@
 
   .arrow-btn ion-icon {
     color: #fff;
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .arrow-btn .arrow-icon {
