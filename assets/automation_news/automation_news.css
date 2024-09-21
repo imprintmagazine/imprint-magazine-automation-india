@@ -336,3 +336,13 @@ hr {
   color: #000;
   font-weight: bold;
 }
+
+/*july-august 2024*/
+ul {
+  margin-left: 20px;      
+  color: #000;
+}
+.inner-list {
+  margin-bottom: 5px;     
+  list-style-type: disc; 
+}
