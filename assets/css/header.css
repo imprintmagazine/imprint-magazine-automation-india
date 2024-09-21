@@ -1,4 +1,4 @@
-html{
+html {
   overflow-x: hidden;
 }
 
@@ -7,6 +7,7 @@ html{
   top: 0;
   width: 100%;
 }
+
 /* header start here========================================== */
 
 header {
@@ -21,14 +22,14 @@ header img {
   width: 200px;
 }
 
-.headerTop .imprintLogos{
+.headerTop .imprintLogos {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 header ul,
-.headerBottom .wrapper{
+.headerBottom .wrapper {
   display: flex;
 }
 
@@ -42,11 +43,11 @@ header ul,
 
 }
 
-.vidProLogo{
+.vidProLogo {
   flex-direction: row;
   display: flex;
   justify-content: space-evenly;
-  }
+}
 
 
 .headerTop a {
@@ -60,7 +61,7 @@ header ul,
   padding: 10px;
 }
 
-.videoProdcastLogo{
+.videoProdcastLogo {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -180,15 +181,6 @@ header ul,
     font-size: 25px;
     text-align: center;
   }
-}
-
-@media screen and (max-width: 885px) {
-  /* .indiaAutomationMagazine {
-        font-size: 18px;
-    } */
-}
-
-@media screen and (max-width: 768px) {
 
   .headerBottom .videoProdcastLogo {
     display: flex;
@@ -217,15 +209,15 @@ header ul,
   .navbar {
     /* display: none; */
     /* width: 100%; */
-    height: 100vh;
+    height:auto;
+    padding: 10px 0;
     background-color: #0e5283;
     position: absolute;
     left: 0;
     top: 100%;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
 
     /* TO GET TRANSITION */
     transform: translateX(100%);
@@ -254,7 +246,8 @@ header ul,
 
   .navbarList {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
+    padding-right: 20px;
   }
 
   .navbarList li {
@@ -275,6 +268,7 @@ header ul,
   .indiaAutomationMagazine {
     font-size: 20px;
   }
+
   .videoProdcastLogo a,
   .videoProdcastLogo a::after {
     font-size: 10px;
