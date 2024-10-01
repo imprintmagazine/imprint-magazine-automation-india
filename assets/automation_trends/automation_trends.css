@@ -1,7 +1,7 @@
 
    /*heading*/
    .allTrends {
-     margin: 20px 0;
+     margin: 20px 8px;
      line-height: 1.4;
    }
 
@@ -65,7 +65,6 @@
      gap: 20px;
    }
 
-
    .textColumn {
      flex: 1;
      font-size: 16px;
@@ -73,7 +72,6 @@
 
    .hexagonColumn {
      position: relative;
-     /* Adjust based on the new hexagon size */
      display: flex;
      align-items: center;
      justify-content: center;
@@ -82,16 +80,13 @@
 
    .hexagon {
      width: 150px;
-     /* Increased width */
      height: 100px;
-     /* Increased height */
      background-color: #b2bcce;
      position: relative;
      display: flex;
      align-items: center;
      justify-content: center;
      box-sizing: border-box;
-     /* Ensure the border is counted in the dimensions */
    }
 
    .hexagon:before,
@@ -106,22 +101,16 @@
    .hexagon:before {
      bottom: 100px;
      border-bottom: 50px solid #b2bcce;
-     /* Adjusted */
-
    }
 
    .hexagon:after {
      top: 100px;
      border-top: 50px solid #b2bcce;
-     /* Adjusted */
-
-
    }
 
    .hexagonText {
      position: absolute;
      font-size: 15px;
-     /* Increased text size */
      color: #003a6d;
      font-weight: bold;
      text-align: center;
@@ -157,17 +146,14 @@
      font-size: 18px;
      margin-bottom: 10px;
    }
-
    .text {
      font-size: 16px;
      text-align: justify;
    }
 
-
    .hexagonColumn1 {
      position: relative;
      width: 150px;
-     /* Adjust based on the new hexagon size */
      height: 100px;
      display: flex;
      align-items: center;
@@ -177,16 +163,13 @@
 
    .hexagon1 {
      width: 150px;
-     /* Increased width */
      height: 100px;
-     /* Increased height */
      background-color: #84bb41;
      position: relative;
      display: flex;
      align-items: center;
      justify-content: center;
      box-sizing: border-box;
-     /* Ensure the border is counted in the dimensions */
    }
 
    .hexagon1:before,
@@ -201,24 +184,65 @@
    .hexagon1:before {
      bottom: 100px;
      border-bottom: 50px solid #84bb41;
-     /* Adjusted */
-
    }
 
    .hexagon1:after {
      top: 100px;
      border-top: 50px solid #84bb41;
-     /* Adjusted */
-
-
    }
 
    .hexagonText1 {
      position: absolute;
      font-size: 15px;
-     /* Increased text size */
      color: #003a6d;
      font-weight: bold;
      text-align: center;
      padding: 5px;
    }
+
+   /*  responsive */
+@media (max-width: 1115px) {
+  .allTrends {
+    padding: 0px 16px;
+  }
+}
+
+@media (max-width: 937px) {
+  .allTrends {
+    padding: 0px 12px;
+  }
+  h2.heading {
+    font-size: 28px; 
+  }
+  h4.subheading {
+    font-size: 20px;
+  }
+  .circle {
+    width: 100%; 
+  }
+}
+
+@media (max-width: 769px) {
+  .subheadingtext {
+    flex-direction: column; 
+    text-align: center;
+  }
+
+  .circle {
+    margin: 10px auto;
+  }
+
+  h2.heading, h4.subheading {
+    text-align: center; 
+  }
+
+  .imageColumn img {
+    width: 100%; 
+  }
+
+  .allTrends {
+    margin: 10px;
+  }
+}
+
+

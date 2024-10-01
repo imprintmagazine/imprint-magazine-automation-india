@@ -32,37 +32,57 @@
   gap: 20px;
 }
 
-
 .ad-box {
-  width: 230px;
-  height: auto;
-  padding: 10px;
+  width: 200px; 
   border: 1px solid #000;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  position: relative;
 }
-
 
 .ad-box img {
-  width: 180px;
+  width: 100%; 
+  height: 250px; 
+  object-fit: cover; 
   display: block;
   padding: 5px;
- 
 }
-
 
 figcaption {
   font-size: 14px; 
   color: #333; 
-  width: 100%;
   font-weight: bold;
   text-align: center; 
-  position: absolute;
-  bottom: 1px; 
-  left: 0; 
-  padding: 5px 0;
+}
+/*responisve*/
+@media (max-width: 460px) {
+  .ad-box {
+   display: contents;
+  }
+  .ad-box img{
+    width: 100%;
+    border: 1px solid #000;
+  }
+}
+
+@media (max-width: 400px) {
+  .ad-box {
+   display: contents;
+  }
+  .ad-box img{
+    width: 100%;
+    border: 1px solid #000;
+  }
+}
+
+@media (max-width: 320px) {
+  .ad-box {
+   display: contents;
+  }
+  .ad-box img{
+    width: 100%;
+    border: 1px solid #000;
+  }
 }

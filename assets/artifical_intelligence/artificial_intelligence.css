@@ -10,81 +10,209 @@
    padding: 10px 0;
  }
  
- .gridContainer {
-     display: grid;
-     grid-template-columns: 1fr 1fr;
-     gap: 20px;
-     margin-top: 20px;
-   }
-   
-   .column {
-     display: flex;
-     flex-direction: column;
-     gap: 4px;
-   }
-   
-   .row {
-     display: flex;
-     gap: 20px;
-   }
-   
-   .box {
-     padding: 20px;
-     text-align: center;
-     position: relative;
-     height: 150px; /* Adjust this if necessary */
-   }
-   
-   /* Reduce the width of the boxes */
-   .largeBox {
-     width: 200px; /* Set a fixed width to reduce the size */
-     height: 250px; /* Keep the height unchanged or adjust as needed */
-   }
-   
-   .box1 {
-     background-color: grey;
-     border: 4px solid black;
-     padding: 7px;
-   }
-   
-   .box2 {
-     background-color: grey;
-     border: 4px solid black;
-     padding: 7px;
-     color: white;
-   }
-   
-   /* Centered text inside the boxes */
-   .boxText {
-     font-size: 18px;
-     color: white;
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-   }
-   
-   /* Add Text under the First Row Boxes */
-   .dimensionsText {
-     display: flex;
-    align-items: center;
-    
-     margin-left: 47px;
-     font-size: 16px;
-     gap: 110px;
-   }
-   
-   .detailsText {
-     font-size: 18px;
-     margin-top: 10px;
-     text-align: center;
-   }
-   
-   /* Rates in the Middle of Both Boxes */
-   .ratesText {
-     font-size: 18px;
-     text-align: center;
-     margin-top: 20px;
-     font-weight: bold;
-   }
-   
+ .allIntelligence {
+  margin: 20px 10px;
+  line-height: 1.4;
+}
+
+h2.heading {
+  font-size: 35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #0E5283;
+  border-bottom: 2px solid red;
+  display: inline-block;
+}
+
+h4.subheading-blue {
+  font-size: 25px;
+  margin-bottom: 5px;
+  color: #0E5283;
+  text-align: center;
+}
+
+.allTrends a {
+  color: #0E5283;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.link {
+  padding-left: 70%;
+  font-size: 16px;
+
+}
+
+.box1 {
+  background-color: #4c95d0;
+  color: #fff;
+  width: 50%; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  text-align: center;
+  margin: 10px auto; 
+  line-height: 1.5;
+  font-size: 15px;
+  padding: 20px;
+  font-weight: bold;
+}
+hr {
+  height: 3px;
+  background-color: #000000;
+  margin: 25px 0;
+}
+
+h4.subheading {
+  font-size: 25px;
+  margin-bottom: 5px;
+  color: #000;
+  text-align: left;
+}
+.subheadingtext {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.inner-text {
+  text-align: justify;
+}
+
+.info-columns {
+  display: flex;
+  gap: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid #000;
+  width: 50%;
+  
+}
+
+.subheading {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.subheading p{
+  font-size: 18px;
+  text-align: justify;
+  padding: 5px 0px;
+}
+
+.text {
+  font-size: 16px;
+  text-align: left;
+}
+
+.inner-text1 img{
+  width: 50%;
+  display: block; 
+  margin: 5px auto; 
+}
+.inner-text img{
+  display: block; 
+  margin: 0 auto;
+  width: 50%; 
+}
+
+/*responsive*/
+
+
+@media (max-width: 995px) {
+  .inner-text img{
+    width: 40%;
+  }
+}
+
+@media (max-width: 900px) {
+  .allIntelligence {
+    margin: 20px 15px;
+    line-height: 1.4;
+  }
+  .inner-text img{
+    width: 50%;
+  }
+}
+@media (max-width: 800px) {
+  .inner-text img{
+    width: 50%;
+  }
+}
+
+@media (max-width: 640px) {
+  .box1{
+    width: 82%;
+  }
+  .inner-text1 img{
+    width: 43%;
+  }
+  .inner-text img{
+    width: 63%;
+  }
+  .link{
+    text-align: end;
+  }
+}
+
+@media (max-width: 593px){
+  .allIntelligence {
+    margin: 20px 20px;
+  }
+  .column{
+    width: 100%;
+  }
+  .info-columns {
+    display: grid;
+   gap: 10px;
+   align-items: center;
+  }
+}
+@media (max-width: 504px){
+  .inner-text1 img{
+    width: 60%;
+  }
+  .inner-text img{
+    width: 70%;
+  }
+}
+@media (max-width: 406px){
+  .allIntelligence {
+    margin: 20px 25px;
+  }
+  .box1{
+    width: 100%;
+  }
+  .inner-text1 img{
+    width: 100%;
+  }
+  .inner-text img{
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px){
+  .box1{
+    width: 100%;
+    font-size: 13px;
+  }
+  .inner-text{
+    text-align: left;
+  }
+  .inner-text1 img{
+    width: 100%;
+  }
+  .inner-text img{
+    width: 110%;
+  }
+}
+
+
+

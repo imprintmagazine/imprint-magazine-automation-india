@@ -226,23 +226,7 @@ p {
   right: 0;
 }
 
-.box8 {
-  position: relative;
-}
 
-.innerBox8 {
-  color: #000;
-  background-color: grey;
-  text-align: center;
-  font-weight: bolder;
-  margin-bottom: 7px;
-  margin-right: 4px;
-  height: 20vh;
-  width: 70%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
 
 .box9 {
   position: relative;
@@ -529,11 +513,7 @@ p {
   right: 0;
 }
 
-.box19-left,
-.box20-left {
-  text-align: left;
 
-}
 
 .box25 {
   position: relative;
@@ -557,22 +537,7 @@ p {
 }
 
 
-.box25{ 
-  position: relative;
-}
-.innerBox25{
-  color: #000;
-  background-color: grey;
-  text-align: center;
-  font-weight: bolder;
-  margin: 4px;
-  height: 5vh;
-  width: 70%;
-  position: absolute;
-  bottom: 0;
-  right: 0;
 
-}
 
 .box26{
   border: 4px solid #000;
@@ -631,13 +596,67 @@ p {
   border: 3px solid #000;
 }
 .table-column{
-  width: 30%; /* Adjust width as needed */
-  padding: 10px;
+  width: 30%; 
   box-sizing: border-box;
 }
 .list-content{
   margin: 10px;
   font-size: 15px;
   font-weight: 600;
- 
 }
+
+
+
+/*responsive*/
+@media (max-width: 610px) {
+  .table-info{
+    width: 100%;
+  }
+  .all-box-container,
+.box-container{
+  width: 100%;
+}
+}
+
+@media (max-width: 555px) {
+  .list-content{
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .list-content{
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 383px) {
+  .all-box-container{
+    width: 90%;
+  }
+  .list-content{
+    font-size: 12px;
+  }
+  .box26{
+    width: 260px;
+  }
+  .box28{
+    width: 260px;
+  }
+  .innerBox28{
+    width: 240px;
+    margin: 2px 5px;
+  }
+  h2.heading{
+    font-size: 25px;
+  }
+  .table-column{
+    width: 40%;
+  }
+}
+
+
+
+
+
+  
