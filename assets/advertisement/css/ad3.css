@@ -1,0 +1,166 @@
+.advertisement-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    border: 1px solid #000;
+     font-family: Arial, Helvetica, sans-serif;
+     margin: 5px 5px;
+     padding: 5px 5px;
+
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.top-bar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.heading {
+    font-size: 35px;
+    margin: 0;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.text p {
+    color: #fff;
+    text-align: left;
+    font-size: 25px;
+}
+
+/* Magazine container styling */
+.magazine-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+/* List styling */
+.list ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: white;
+}
+
+.list li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+/* Magazine logo styling */
+.magazine-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.magazine-logo img {
+    width: 40%;
+    height: auto;
+}
+
+
+.list {
+    flex: 1;
+    padding: 10px;
+}
+
+.magazine-logo {
+    flex: 1;
+    padding: 10px;
+}
+
+/*responsive*/
+@media screen and (max-width: 933px) {
+    .magazine-logo img {
+        width: 70%;
+
+    }
+
+    .list li {
+        text-align: left;
+
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .magazine-logo img {
+        width: 70%;
+
+    }
+}
+
+@media screen and (max-width: 723px) {
+    .magazine-logo img {
+        width: 70%;
+        display: block;
+
+    }
+
+    .list li {
+        text-align: left;
+
+    }
+
+}
+
+@media screen and (max-width: 695px) {
+    .magazine-logo img {
+        width: 70%;
+        display: block;
+
+    }
+
+}
+
+@media screen and (max-width: 539px) {
+    .magazine-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* List styling */
+    .list {
+        padding: 0;
+    }
+
+    /* Image should be under the list */
+    .magazine-logo img {
+        width: 70%;
+        margin-top: 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 320px) {
+
+    /* Stack the list and image vertically */
+    .magazine-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* List styling */
+    .list {
+        padding: 0;
+    }
+
+    /* Image should be under the list */
+    .magazine-logo img {
+        width: 70%;
+        margin-top: 20px;
+    }
+}
