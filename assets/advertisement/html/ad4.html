@@ -2,70 +2,265 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Advertisment</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advertisment</title>
 </head>
 
 <!-- awesome css link here -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css"
-    integrity="sha512-72McA95q/YhjwmWFMGe8RI3aZIMCTJWPBbV8iQY3jy1z9+bi6+jHnERuNrDPo/WGYEzzNs4WdHNyyEr/yXJ9pA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  integrity="sha512-72McA95q/YhjwmWFMGe8RI3aZIMCTJWPBbV8iQY3jy1z9+bi6+jHnERuNrDPo/WGYEzzNs4WdHNyyEr/yXJ9pA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="/assets/css/header.css">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/footer.css">
+<link rel="stylesheet" href="/assets/css/asideLinks.css">
+<link rel="stylesheet" href="/assets/advertisement/advertisement.css">
 <link rel="stylesheet" href="/assets/advertisement/css/ad4.css">
 
 <body>
-    <main>
-        <section>
-            <div class="advertisement-container">
-                <div class="top-bar">
-                    <a href="https://imprint-magazine.in/">www.imprint.in</a>
-                    <a href="https://infocast.in/">www.infocast.in</a>
-                </div>
-                <h1 class="heading">Automation’s Growth Story</h1>
-                <div class="text">
-                    <p>
-                        <img src="/assets/images/automation_growth_story.jpeg" alt="automation_growth">
-                        The India Industrial Automation Market size is expected to grow from USD 13.23 billion in 2023
-                        to USD 25.76 billion by 2028, at a CAGR of 14.26% during the forecast period (2023-2028).
-                    </p>
-                    <p>The India Warehouse Automation Market size is expected to grow from USD 267.07 million in 2023 to
-                        USD 880.98 million by 2028, at a CAGR of 26.96% during the forecast period (2023-2028).</p>
-                   
-                </div>
+  <!-- header start here========================= -->
+  <div class="headerTop">
+    <div class="wrapper">
+      <ul class="imprintLogos">
+        <li>
+          <a href="/index.html" class="logo">
+            <img src="/assets/images/imprintAutomationIndiaLogo.jpeg" alt="Automation Logo" />
+          </a>
+        </li>
+        <li>
+          <a href="/imprintArchive.html" class="logo">
+            <img src="/assets/images/since 1961.png" alt="Magazine Logo" />
+          </a>
+        </li>
+      </ul>
 
-                <div class="text1">
-                     <p>The packaging automation market is currently valued at US$ 74.53 Bn in 2023. By 2033, demand for
-                        Packaging Automation is expected to reach a high of US$ 161.66 Bn, the report adds.</p>
-                </div>
+      <ul class="videoProdcastLogo">
+        <li>
+          <a href="#" class="indiaAutomationMagazine">
+            India's Automation Magazine
+          </a>
+        </li>
+        <li class="vidProLogo">
+          <a href="#" id="video" title="watch video">video</a>
+          <a href="#" id="podcast" title="listen podcast">podcast</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <header class="header">
+    <div class="headerBottom">
+      <div class="wrapper">
+        <nav class="navbar">
+          <ul class="navbarList">
+            <li>
+              <a href="/index.html" title="Home">Home</a>
+            </li>
+            <li class="dropdown" onclick="show_hide()">
+              <a href="#" title="Automation WorldWide" id="automationWorldWide" class="dropdown-btn">Automation
+                WorldWide<i class="fa fa-caret-down"></i>
+              </a>
+              <div class="dropdown-content">
+                <a href="#" title="Global Expo">Global Expo</a>
+                <a href="#" title="Association">Association</a>
+                <a href="#" title="Conference">Conference</a>
+                <!-- <a href="#" title="Magazine">Magazine</a> -->
+              </div>
+            </li>
+            <!-- <li>
+              <a href="#internationalAssociation" title="International Association">International Association</a>
+            </li> -->
+            <li>
+              <!-- <a href="#projects" title="Projects">Projects</a> -->
+              <a href="/magazine.html" title="Magazine">Imprint Automation India Magzine</a>
+            </li>
+            <li>
+              <a href="/imprintArchive.html" title="Imprint Archive">Imprint Archive</a>
+            </li>
+            <li>
+              <a href="/ourTeam.html" title="Our Team">Our Team</a>
+            </li>
+            <li>
+              <a href="/contact.html" title="Contact Us">Contact Us</a>
+            </li>
+            <li>
+              <a href="/about.html" title="About Us">About Us</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="videoProdcastLogo">
+          <li>
+            <a href="#" id="video" title="watch video">video</a>
+          </li>
+          <li>
+            <a href="#" id="podcast" title="listen podcast">podcast</a>
+          </li>
+        </ul>
+        <div class="mobileNavBtn">
+          <ion-icon name="menu-outline" class="mobileNavIcon"></ion-icon>
+          <ion-icon name="close-outline" class="mobileNavIcon"></ion-icon>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header end here========================= -->
 
-                <br>
-                <br>
+  <div class="asideLinks">
+    <ul>
+      <li><a href="/assets/rate/rate.html" onclick="showFullName(this, 'Print Advertising Specification & Rate')">Print
+          Advertising
+          Specification & Rate</a></li>
+      <li><a href="/assets/automation_trends/automation_trends.html"
+          onclick="showFullName(this, 'Automation Trends')">Automation Trends</a></li>
+      <li><a href="/assets/automation_news/automation_news.html"
+          onclick="showFullName(this, 'Automation News')">Automation News</a></li>
+      <li><a href="/assets/automation_robotics/automation_robotics.html"
+          onclick="showFullName(this, 'Automation Robotics')">Automation Robotics</a></li>
+      <li><a href="/assets/artifical_intelligence/artificial_intelligence.html"
+          onclick="showFullName(this, 'Artificial Intelligence')">Artificial Intelligence</a></li>
+      <!-- <li><a href="#" onclick="showFullName(this, 'Automation IMTEX')">Automation IMTEX</a></li> -->
+      <li><a href="/assets/automation_articles/automation_articles.html"
+          onclick="showFullName(this, 'Automation Articles')">Automation Articles</a></li>
+      <li><a href="/assets/mediakit/mediakit.html" onclick="showFullName(this, 'Mediakit')">Mediakit</a></li>
+      <li><a href="/assets/editorial_calender/editorial_calender.html"
+          onclick="showFullName(this, 'Editorial Calendar')">Editorial Calendar</a></li>
+      <li><a href="/assets/digital_campaign/digital_campaign.html"
+          onclick="showFullName(this, 'Digital Campaign')">Digital Campaign</a></li>
+      <li><a href="/assets/advertisement/advertisement.html"
+          onclick="showFullName(this, 'Advertisement')">Advertisement</a></li>
+    </ul>
+  </div>
+  <div class="arrow-btn">
+    <ion-icon name="arrow-forward-outline" class="arrow-icon"></ion-icon>
+    <ion-icon name="arrow-back-outline" class="arrow-icon"></ion-icon>
+  </div>
+  <main class="advertisement-container">
+    <section>
+      
+            <div class="top-bar">
+                <a href="https://imprint-magazine.in/">www.imprint.in</a>
+                <a href="https://infocast.in/">www.infocast.in</a>
+            </div>
+            <h1 class="heading">Automation’s Growth Story</h1>
+            <div class="text">
+                <p>
+                    <img src="/assets/images/automation_growth_story.jpeg" alt="automation_growth">
+                    The India Industrial Automation Market size is expected to grow from USD 13.23 billion in 2023
+                    to USD 25.76 billion by 2028, at a CAGR of 14.26% during the forecast period (2023-2028).
+                </p>
+                <p>The India Warehouse Automation Market size is expected to grow from USD 267.07 million in 2023 to
+                    USD 880.98 million by 2028, at a CAGR of 26.96% during the forecast period (2023-2028).</p>
+               
+            </div>
 
-                <div class="text2">
-                    <img src="/assets/images/imprintAutomationIndiaLogo.jpeg" alt="imprint_automation">
-                    <p>The Pharmaceutical Automation Market is projected to reach $18.2 billion by 2029 at a CAGR of 12%
-                        from 2022 to 2029. </p>
-                        <p>The growth of this market is attributed to the increasing adoption of robots
-                        in pharmaceutical manufacturing, government initiatives to promote industrial development,
-                        rising investments in transforming conventional production facilities, and growing demand for
-                        safe and digitized production processes. The growing demand for IoT in pharmaceutical
-                        manufacturing are expected to offer significant opportunities for the growth of this market.</p>
-                </div>
+            <div class="text1">
+                 <p>The packaging automation market is currently valued at US$ 74.53 Bn in 2023. By 2033, demand for
+                    Packaging Automation is expected to reach a high of US$ 161.66 Bn, the report adds.</p>
+            </div>
 
+            <br>
+            <br>
 
-
-
-
-
-
-                <!--advertisement-container end here -->
+            <div class="text2">
+                <img src="/assets/images/imprintAutomationIndiaLogo.jpeg" alt="imprint_automation">
+                <p>The Pharmaceutical Automation Market is projected to reach $18.2 billion by 2029 at a CAGR of 12%
+                    from 2022 to 2029. </p>
+                    <p>The growth of this market is attributed to the increasing adoption of robots
+                    in pharmaceutical manufacturing, government initiatives to promote industrial development,
+                    rising investments in transforming conventional production facilities, and growing demand for
+                    safe and digitized production processes. The growing demand for IoT in pharmaceutical
+                    manufacturing are expected to offer significant opportunities for the growth of this market.</p>
             </div>
 
 
 
 
-        </section>
-    </main>
+
+
+
+       
+
+
+
+
+    </section>
+      </main>
+    
+  <!-- main end here-->
+
+
+
+
+
+
+
+
+
+
+  <!-- footer start here========================= -->
+  <footer>
+    <div class="footerUpper">
+      <div class="wrapper">
+        <div class="navigation">
+          <ul>
+            <li>
+              <a href="/about.html" target="_blank" title="About Us">About Us</a>
+            </li>
+            <li>
+              <a href="/contact.html" target="_blank" title="Contact Us">Contact Us</a>
+            </li>
+            <li>
+              <a href="#cookiesPolicy">cookies policy</a>
+            </li>
+            <li class="privacyPolicy">
+              <a href="#" title="privacy policy">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="imprintAutomation">
+          <ul>
+            <li><a href="https://goo.gl/maps/j2Vkj57eJPxxYRFr9"><b>Address: </b>6B/4A,Sangeeta Apts,Juhu
+                Road,Santacruz(W), Mumbai-400049</a></li>
+            <li><a href=""><b>Content & Bussiness Manager: </b>Anchal Tiwari</a></li>
+            <li><a href="mailto:anchal.tiwari@imprint-magazine.in"><b>Email: </b>anchal.tiwari@imprint-magazine.in</a>
+            </li>
+            <li><a href=""><b>Phone: </b>9821135542</a></li>
+            <li><a href=""><b>Landline: </b>02235785032</a></li>
+          </ul>
+        </div>
+        <div class="infocast">
+          <figure>
+            <img src="/assets/images/infocastLogo.png" alt="Infocast System Pvt Ltd">
+          </figure>
+          <p>
+            <a href="https://infocast.in/" target="_blank" title="infocast" id="infocastLogo">Infocast System Pvt
+              Ltd</a>
+          </p>
+          <ul>
+            <li><a href="https://paratechexpo.in/paraExpoExplore.html" title="Expo">Expo</a></li>
+            <li><a href="https://imprint-magazine.in/magazine.html" title="Magazine">Magazine</a></li>
+            <li><a href="" title="Seminar">Seminar</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <div class="footerLower">
+      <div class="wrapper">
+        <div class="copyRight">
+          Copyright &copy; 1961 Imprint
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+  <!-- js ionic file here========================= -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <!-- js link here======================= -->
+  <script src="/assets/js/header.js"></script>
+  <script src="/assets/js/aside.js"></script>
 </body>
 
 
