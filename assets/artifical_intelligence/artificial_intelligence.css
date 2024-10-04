@@ -2,7 +2,6 @@
     margin: 2px 40px;
  }
  .imprintLogo img {
-   
    display: block;
    margin-left: auto;
    margin-right: auto;
@@ -113,50 +112,32 @@ h4.subheading {
 }
 
 .inner-text1 img{
-  width: 50%;
+  width: 200px;
   display: block; 
   margin: 5px auto; 
 }
 .inner-text img{
   display: block; 
   margin: 0 auto;
-  width: 50%; 
+  width: 300px; 
 }
 
 /*responsive*/
-
-
-@media (max-width: 995px) {
-  .inner-text img{
-    width: 40%;
-  }
-}
 
 @media (max-width: 900px) {
   .allIntelligence {
     margin: 20px 15px;
     line-height: 1.4;
   }
-  .inner-text img{
-    width: 50%;
-  }
+ 
 }
-@media (max-width: 800px) {
-  .inner-text img{
-    width: 50%;
-  }
-}
+
 
 @media (max-width: 640px) {
   .box1{
     width: 82%;
   }
-  .inner-text1 img{
-    width: 43%;
-  }
-  .inner-text img{
-    width: 63%;
-  }
+ 
   .link{
     text-align: end;
   }
@@ -175,14 +156,7 @@ h4.subheading {
    align-items: center;
   }
 }
-@media (max-width: 504px){
-  .inner-text1 img{
-    width: 60%;
-  }
-  .inner-text img{
-    width: 70%;
-  }
-}
+
 @media (max-width: 406px){
   .allIntelligence {
     margin: 20px 25px;
@@ -190,14 +164,20 @@ h4.subheading {
   .box1{
     width: 100%;
   }
-  .inner-text1 img{
-    width: 100%;
+
+}
+@media (max-width: 350px){
+  .inner-text{
+    text-align: left;
+    font-size: 15px;
   }
   .inner-text img{
-    width: 100%;
+    width: 240px;
+  }
+  .inner-text1 img{
+    width: 200px;
   }
 }
-
 @media (max-width: 320px){
   .box1{
     width: 100%;
@@ -205,12 +185,6 @@ h4.subheading {
   }
   .inner-text{
     text-align: left;
-  }
-  .inner-text1 img{
-    width: 100%;
-  }
-  .inner-text img{
-    width: 110%;
   }
 }
 
