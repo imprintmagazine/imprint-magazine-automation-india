@@ -1,7 +1,10 @@
+
 .ourAdvertisement {
     align-items: center;
     justify-content: center;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .ourAdvertisement img {
@@ -10,12 +13,6 @@
 
 .ourAdvertisement .magazineAndMediaCover{
     display: flex;
-}
-
-.ourAdvertisement .wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .ourAdvertisement div {
@@ -141,10 +138,10 @@ padding: 10px 0;
     width: 200px;
 }
 
-@media screen and (max-width: 1020px) {
-    .ourAdvertisement .wrapper,
-    .advertisement .wrapper {
-        flex-direction: column;
+@media screen and (max-width: 1115px) {
+    .ourAdvertisement{
+    justify-content: space-between;
+
     }
 
     .advertisement .goaConferenceImg {
@@ -154,6 +151,14 @@ padding: 10px 0;
     .goaConferenceText h1 {
         font-size: 20px;
     }
+}
+
+@media screen and (max-width: 995px) {
+    .ourAdvertisement{
+        justify-content: center;
+        flex-wrap: wrap;
+    
+        }
 }
 
 @media screen and (max-width: 530px) {

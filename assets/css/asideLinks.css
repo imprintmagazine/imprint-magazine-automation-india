@@ -1,4 +1,26 @@
-.asideLinks {
+.asideLinks a{
+  color: #000;
+  font-size: 14px;
+  padding: 10px;
+  display: flex;
+  transition: all ease 1s;
+}
+
+.asideLinks a:hover{
+  background-color: red;
+  color: #fff;
+}
+
+.asideLinks li{
+  border: 1px solid #000;
+}
+
+.asideLinks ul{
+  /* width: 20%; */
+  /* position: sticky; */
+}
+
+/* .asideLinks {
     z-index: 3;
     position: fixed;
     top: 20%;
@@ -98,4 +120,22 @@
     .asideLinks {
       width: 100% !important;
     }
+  } */
+
+  @media screen and (max-width: 1115px) {
+    .asideLinks{
+      justify-content: center;
+    }
+    .asideLinks ul{
+      flex-direction: row;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center
+    }
+
+    .asideLinks li{
+      width: 200px;
+      align-content: center;
+    }
+  
   }

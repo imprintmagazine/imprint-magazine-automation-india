@@ -261,9 +261,9 @@ header ul,
 }
 
 @media screen and (max-width: 480px) {
-  header img {
+  .headerTop img, header img {
     width: 150px;
-  }
+}
 
   .indiaAutomationMagazine {
     font-size: 20px;
@@ -276,9 +276,9 @@ header ul,
 }
 
 @media screen and (max-width: 320px) {
-  header img {
+  .headerTop img, header img {
     width: 120px;
-  }
+}
 
   .indiaAutomationMagazine {
     font-size: 18px;
@@ -286,9 +286,9 @@ header ul,
 }
 
 @media screen and (max-width: 280px) {
-  header img {
+  .headerTop img, header img {
     width: 100px;
-  }
+}
 
   .indiaAutomationMagazine {
     font-size: 15px;
