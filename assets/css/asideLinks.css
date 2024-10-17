@@ -1,24 +1,30 @@
 .asideLinks a{
-  color: #000;
+  color: #fff;
+  font-weight: bold;
+  background-color: lightslategray;
   font-size: 14px;
   padding: 10px;
   display: flex;
   transition: all ease 1s;
+  width: 200px;
+  text-align: center;
 }
 
 .asideLinks a:hover{
-  background-color: red;
+  background-color: darkblue;
   color: #fff;
 }
 
 .asideLinks li{
-  border: 1px solid #000;
+  border: 2px solid #000;
+  margin: 10px;
+  border-radius: 5px;
 }
 
-/* .asideLinks ul{
-  width: 20%;
+.asideLinks ul{
+  /* width: 20%; */
   position: sticky;
-} */
+}
 
 /* .asideLinks {
     z-index: 3;
