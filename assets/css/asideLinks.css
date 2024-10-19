@@ -1,5 +1,4 @@
 .asideLinks a{
-<<<<<<< HEAD
   color: #39739d;
   font-weight: bold;
   box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
@@ -27,11 +26,9 @@
   /* width: 20%; */
   position: sticky;
 } 
-
-=======
-  color: #fff;
+.asideLinks{
+  /* color: #fff; */
   font-weight: bold;
-  background-color: lightslategray;
   font-size: 14px;
   padding: 10px;
   display: flex;
@@ -40,12 +37,12 @@
 }
 
 .asideLinks a:hover{
-  background-color: darkblue;
-  color: #fff;
+  /* background-color: darkblue; */
+  /* color: #fff; */
 }
 
 .asideLinks li{
-  border: 2px solid #000;
+  /* border: 2px solid #000; */
   margin: 10px;
   border-radius: 5px;
 }
@@ -54,7 +51,6 @@
   /* width: 20%; */
   position: sticky;
 }
->>>>>>> 9cc1a2500ab476bbd36f9f17e4c3d2274c94a748
 
 /* .asideLinks {
     z-index: 3;
