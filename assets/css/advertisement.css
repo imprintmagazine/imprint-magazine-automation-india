@@ -34,7 +34,10 @@
 
 }
 
-
+.webinar img{
+    width: 25%;
+    margin-left: 50px;
+}
 /* advertishment=============================================== */
 .advertisement {
     line-height: 1.6;

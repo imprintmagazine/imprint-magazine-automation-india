@@ -13,15 +13,13 @@
 
    /*industrial robotics space*/
    .allRobotics {
-    text-align: center; 
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-bottom: 15px;
+    margin: 20px 8px;
+    line-height: 1.4;
     
   }
   
   h2.heading {
-    font-size: 35px;
+    font-size: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
     color: #0E5283;
@@ -40,8 +38,8 @@
     text-decoration: none;
   }
   .link{
-    padding-left: 480px;
     font-size: 16px;
+    margin-bottom: 5px;
   }
   .inner-text{
    text-align: justify;
@@ -112,12 +110,11 @@
 
   /*tabel 1*/
   .container-column {
-    display: flex;           
-    gap: 20px;               
+    display: flex;                         
   }
   .col{
     flex: 1;                 
-    padding: 20px;  
+    padding: 5px;  
   }
 
   .textheading {
@@ -147,10 +144,7 @@
     }
   }
   @media (max-width: 735px) {
-    .link{ 
-      padding-left: 300px;
-      font-size: 16px;
-    }
+ 
     .row {
       padding: 10px;         
       margin-bottom: 10px;    
@@ -159,39 +153,25 @@
     .text{
       text-align: left;
     }
-    .container-column {
-      display: block;           
-      gap: 20px;               
-    }
+   
     .column-info { 
       display: inline;
       gap: 10px;             
     }
-   
   }
 
   @media (max-width: 620px){
     .container-column {
-      display: block;           
+      display: flex; 
+      flex-direction: column;          
       gap: 20px;               
+      align-items: center;
     }
-    .column-info { 
-      display: inline;
-      gap: 10px;             
-    }
+  
   }
 
   @media (max-width: 544px){
-    .link{ 
-      padding-left: 200px;
-      text-align: start;
-    }
-    .container-column {
-      display: block;           
-      gap: 20px;               
-    }
-    .column-info {
-            
+    .column-info {    
       display: inline;
       gap: 10px;             
     }
@@ -199,47 +179,26 @@
 
 
 
-  @media (max-width: 439px){
-    .box{
-      width: 100%;
-      font-size: 15px;
-    }
-    .link{ 
-      text-align: center;
-      padding-left: 20px;
-    }
-    .container-column {
-      display: block;           
-      gap: 20px;               
-    }
-    .column-info {      
-      display: inline;
-      gap: 10px;             
-    }
-  }
-
-  @media (max-width: 404px){
-    .column-info {      
-      display: inline;
-      gap: 10px;             
-    }
-    .box{
-      width: 100%;
-      font-size: 15px;
-    }
-  }
-  @media (max-width: 320px){
+  @media (max-width: 480px){
     h2.heading {
-      font-size: 30px;
+      font-size: 20px;
+      text-align: left;
     }
-    .link{
-      text-align: center;
-    }
-    .inner-text{
+    h4.subheading{
+      font-size: 18px;
       text-align: left;
     }
     .box{
       width: 100%;
       font-size: 15px;
     }
+    .link{ 
+      text-align: left;
+      font-size: 16px;
+    }
+  
+  
   }
+
+ 
+ 

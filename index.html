@@ -17,12 +17,34 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/footer.css">
   <link rel="stylesheet" href="./assets/css/advertisement.css">
+  <link rel="stylesheet" href="./assets/css/cookie.css">
+  <link rel="stylesheet" href="./assets/css/asideLinks.css">
+
+
 
 </head>
 
 <body>
+
   <div class="container">
     <div id="header"></div>
+    <!--Cookie policy-->
+    <div class="wrapper">
+    <div class="cookie-wrapper">
+      <header>
+        <h2>Cookies Consent</h2>
+      </header>
+      <div class="data">
+        <p>This website uses cookies to ensure you get the best experience on our website.
+          <a href="#">Read more...</a>
+        </p>
+      </div>
+      <div class="buttons">
+        <button class="button" id="acceptBtn">Accept</button>
+        <button class="button" id="declineBtn">Decline</button>
+      </div>
+    </div>
+    </div>
 
     <!-- main start here========================= -->
     <main class="mainSection">
@@ -45,6 +67,7 @@
   <!-- js link here======================= -->
   <!-- js link for header and footer -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./assets/js/cookie.js" defer></script>
   <script>
     $(function () {
       $("#header").load("./header.html");

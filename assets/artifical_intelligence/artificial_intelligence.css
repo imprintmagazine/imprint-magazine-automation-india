@@ -27,7 +27,7 @@ h4.subheading-blue {
   font-size: 25px;
   margin-bottom: 5px;
   color: #0E5283;
-  text-align: center;
+  text-align: left;
 }
 
 .allTrends a {
@@ -39,7 +39,7 @@ h4.subheading-blue {
 }
 
 .link {
-  padding-left: 70%;
+  text-align: left;
   font-size: 16px;
 
 }
@@ -124,22 +124,10 @@ h4.subheading {
 
 /*responsive*/
 
-@media (max-width: 900px) {
-  .allIntelligence {
-    margin: 20px 15px;
-    line-height: 1.4;
-  }
- 
-}
 
-
-@media (max-width: 640px) {
-  .box1{
-    width: 82%;
-  }
- 
-  .link{
-    text-align: end;
+@media (max-width: 771px){
+   .box1{
+    width: 100%;
   }
 }
 
@@ -155,20 +143,34 @@ h4.subheading {
    gap: 10px;
    align-items: center;
   }
+  h4.subheading-blue{
+    font-size: 18px
+  }
+  h4.subheading{
+    font-size: 16px;
+  }
+  h2.heading {
+    font-size: 28px;
+
+  }
 }
 
-@media (max-width: 406px){
+@media (max-width: 426px){
   .allIntelligence {
     margin: 20px 25px;
   }
   .box1{
     width: 100%;
   }
-
 }
+@media (max-width: 357px){
+  h2.heading {
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 350px){
   .inner-text{
-    text-align: left;
     font-size: 15px;
   }
   .inner-text img{
@@ -178,15 +180,7 @@ h4.subheading {
     width: 200px;
   }
 }
-@media (max-width: 320px){
-  .box1{
-    width: 100%;
-    font-size: 13px;
-  }
-  .inner-text{
-    text-align: left;
-  }
-}
+
 
 
 

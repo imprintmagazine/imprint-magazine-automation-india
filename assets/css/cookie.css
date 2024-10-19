@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.cookie-wrapper {
+    position: fixed;
+    bottom: 50px;
+    max-width: 345px;
+    width: 100%;
+    background: #0e5283;
+    border-radius: 8px;
+    padding: 15px 25px 22px;
+    right: -370px;
+    transition: right 0.3s ease;
+}
+
+.cookie-wrapper.show {
+    right: 20px;
+}
+
+.cookie-wrapper header {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+header h2 {
+    color: #fff;
+    font-weight: 500;
+}
+
+.cookie-wrapper .data {
+    margin-top: 16px;
+}
+
+.cookie-wrapper .data p {
+    color: #000;
+    font-size: 16px;
+}
+
+.data p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.cookie-wrapper .data p a:hover {
+    text-decoration: underline;
+}
+
+.cookie-wrapper .buttons {
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons .button {
+    border: none;
+    color: #000;
+    background-color: #fff;
+    padding: 8px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    width: calc(100% /2 - 10px);
+    transition: all 0.2s ease;
+}
+
+.buttons .button:hover {
+    background: #0e5283;
+}
+
+
+@media screen and (max-width: 1115px) {
+    .cookie-wrapper {
+        bottom: 5px;
+    }
+
+    .cookie-wrapper.show {
+        right: 3%;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .cookie-wrapper {
+        bottom: 5px;
+    }
+
+    .cookie-wrapper.show {
+        right: 3%;
+    }
+
+}
+
+
+@media screen and (max-width: 580px) {
+    .cookie-wrapper {
+        bottom: 1px;
+        right: -100%;
+
+        padding: 10px 10px 10px;
+    }
+
+    .cookie-wrapper.show {
+        right: 2%;
+    }
+
+    header h2 {
+        font-size: 14px;
+    }
+
+    .cookie-wrapper .data p {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+}
+
+@media screen and (max-width: 417px) {
+    .cookie-wrapper.show {
+        z-index: 1;
+    }
+
+    .cookie-wrapper {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .cookie-wrapper.show {
+        z-index: 1;
+    }
+
+    .cookie-wrapper {
+        width: 65%;
+        right: -100%;
+    }
+}
