@@ -627,12 +627,11 @@
 }
 
 /*page 13*/
-.box22-left{
+.box22-left,.box21-left{
   padding-top: 50%;
+  padding-right: 58px;
 }
-.box21-left{
-  padding-top: 50%;
-}
+
 .b21 {
   position: relative;
 }

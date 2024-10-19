@@ -83,7 +83,7 @@ p.box1-text,
 }
 
 p {
-  font-size: 10px;
+  font-size: 13px;
   text-align: center;
   font-weight: bold;
   padding: 5px;
@@ -604,6 +604,11 @@ p {
   font-size: 15px;
   font-weight: 600;
 }
+.box19-left,.box20-left{
+  padding-top: 50%;
+  padding-right: 58px;
+}
+
 
 
 
@@ -622,11 +627,19 @@ p {
   .list-content{
     font-size: 13px;
   }
+  h2.heading {
+    text-align: left;
+    font-size: 17px;
+  }
 }
 
 @media (max-width: 480px) {
   .list-content{
     font-size: 10px;
+  }
+  h2.heading {
+    text-align: left;
+    font-size: 15px;
   }
 }
 
@@ -652,6 +665,10 @@ p {
   }
   .table-column{
     width: 40%;
+  }
+  h2.heading {
+    text-align: left;
+    font-size: 15px;
   }
 }
 

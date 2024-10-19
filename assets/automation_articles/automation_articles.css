@@ -19,10 +19,8 @@ h2.heading {
   display: inline-block;
 }
  .allarticles {
-  margin: 0 auto;
-  padding: 20px;
-  margin: 20px 0;
-  line-height: 1.4;
+  margin: 20px 8px;
+     line-height: 1.4;
 }
 h2 {
   text-align: center;
@@ -131,7 +129,6 @@ h2 {
     margin-bottom: 10px;
   }
 
- 
   .allarticles {
     padding: 10px;
     margin: 10px 0;

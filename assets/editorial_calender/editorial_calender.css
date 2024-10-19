@@ -10,15 +10,20 @@
   width: 20%;
   padding: 10px 0;
 }
+.allEditorial{
+  margin: 20px 8px;
+  line-height: 1.4;
+}
 
 
 /*editorial calender*/
 h2.heading {
-  font-size: 28px;
+  font-size: 35px;
   margin-top: 10px;
   margin-bottom: 10px;
   color: #0E5283;
-  text-align: center;
+  border-bottom: 2px solid red;
+  display: inline-block;
 }
 
 h3.subheading {
@@ -83,7 +88,7 @@ th {
     width: 100%;
   }
   h2.heading{
-    font-size: 25px;
+    font-size: 28px;
   }
   th,
 td{

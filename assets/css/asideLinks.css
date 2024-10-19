@@ -1,24 +1,32 @@
 .asideLinks a{
-  color: #000;
+  color: #39739d;
+  font-weight: bold;
+  box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+  background-color: #e1ecf4;
   font-size: 14px;
   padding: 10px;
   display: flex;
-  transition: all ease 1s;
+  width: 200px;
+  border: 1px solid #7aa7c7;
+  border-radius: 5px;
 }
 
 .asideLinks a:hover{
-  background-color: red;
-  color: #fff;
+  background-color: #b3d3ea;
+  color: #2c5777;
+ 
 }
 
 .asideLinks li{
-  border: 1px solid #000;
+  margin: 5px;
+  border-radius: 5px;
 }
 
-/* .asideLinks ul{
-  width: 20%;
+ .asideLinks ul{
+  /* width: 20%; */
   position: sticky;
-} */
+} 
+
 
 /* .asideLinks {
     z-index: 3;
@@ -122,20 +130,21 @@
     }
   } */
 
-  @media screen and (max-width: 1115px) {
-    .asideLinks{
-      justify-content: center;
-    }
-    .asideLinks ul{
-      flex-direction: row;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center
-    }
-
-    .asideLinks li{
-      width: 200px;
-      align-content: center;
-    }
+ @media screen and (max-width: 1115px) { /*1115px*/
+  .asideLinks {
+    justify-content: center;
+  }
+  .asideLinks ul {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
   
+  @media screen and (max-width: 400px){
+    .asideLinks a{
+      width: 150px;
+      font-size: 12px;
+    }
   }

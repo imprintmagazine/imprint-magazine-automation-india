@@ -23,6 +23,7 @@
     top: 10%;
 }
 
+
 #search-input,
 #search {
     padding: 10px;
@@ -39,5 +40,22 @@
     color: #fff;
 }
 #search:hover{
-    background-color: darkgreen;
+    background-color: darkgreen;
+}
+
+/* @media screen and (max-width: 500px){
+    .search_container {
+        position: sticky;
+        top: 10%;
+    } 
+
+}*/
+
+@media screen and (max-width: 400px){
+    .search_container{
+        padding: 10px 0;
+    }
+    .allImprintIssue img {
+        width: 200px;
+    }
 }

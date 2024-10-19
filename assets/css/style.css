@@ -4,7 +4,13 @@
   padding: 0;
   font-family: sans-serif;
   box-sizing: border-box;
+  
 }
+ /* html,
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+}  */
 
 /* wrapper code here======================= */
 .wrapper {
@@ -62,10 +68,11 @@ a {
 }
 
 .bodySection{
-  width: 80%;
+  width: 75%;
 }
 
 @media screen and (max-width: 1115px) {
+
   .mainSection{
     justify-content: center;
   }
@@ -81,6 +88,11 @@ a {
 }
 
 @media screen and (max-width: 580px) {
+  html,
+body {
+    overflow-x: hidden;
+   
+} 
 
   .aboutUs h2,
   .ourTeam h2,
